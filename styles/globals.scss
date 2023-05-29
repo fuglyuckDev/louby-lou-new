@@ -1,0 +1,10 @@
+@import "/styles/global/variables";
+
+html,
+body {
+  min-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: $background-dark;
+}

@@ -1,0 +1,48 @@
+@import "../../styles/global/variables";
+
+.container {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100px;
+  //   background-color: rgba(0, 0, 0, 0.17);
+  //   color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 10%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+
+  > * {
+    color: $accent-light;
+  }
+}
+
+.button {
+  height: 100%;
+  width: 10%;
+  background-color: $accent-dark;
+  color: $background-dark;
+  font-size: 20px;
+  border: none;
+  height: 100px;
+}
+
+.button,
+.links {
+  font-family: $body-font;
+  font-weight: bold;
+}
