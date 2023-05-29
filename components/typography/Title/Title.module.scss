@@ -1,0 +1,12 @@
+@import "../../../styles/global/variables";
+
+.title {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: $title-small;
+  line-height: 102.4%;
+  color: $accent-dark;
+  text-transform: uppercase;
+  line-height: 0.8;
+}

@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./Hero.module.scss";
+import HeroTitle from "../typography/HeroTitle/HeroTitle";
 
-const Hero = () => {
+const Hero = ({ title }) => {
   return (
     <div className={styles.heroContainer}>
-      <video className={styles.video}>
-        <source src="/public/videos/Pink_n_purple_video.mp4" type="video/mp4" />
+      <HeroTitle text={title} />
+      <video autoPlay muted loop className={styles.video}>
+        <source src="/videos/Pink_n_purple_video.mp4" type="video/mp4" />
       </video>
     </div>
   );

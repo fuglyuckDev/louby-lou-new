@@ -1,0 +1,40 @@
+@import "../../../styles/global/variables";
+
+.hero__Container {
+  transform-origin: 50% 50% 0;
+  z-index: 2;
+  position: absolute;
+  transform: translate(15vw, 40vh);
+}
+
+.title {
+  font-family: $body-font;
+  font-size: $title-large;
+  letter-spacing: -3px;
+  color: white;
+  margin: 0;
+  width: 1000px;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.button__Container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+  & > button {
+    height: 70px;
+    outline: none;
+    border: none;
+    font-family: $body-font;
+    font-size: $button;
+    font-weight: 600;
+    color: $background-dark;
+  }
+
+  :nth-child(2) {
+    width: 274px;
+    background-color: $accent-light;
+  }
+}
