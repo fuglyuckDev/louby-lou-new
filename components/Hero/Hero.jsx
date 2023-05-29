@@ -7,7 +7,7 @@ const Hero = ({ title }) => {
     <div className={styles.heroContainer}>
       <HeroTitle text={title} />
       <video autoPlay muted loop className={styles.video}>
-        <source src="/videos/Pink_n_purple_video.mp4" type="video/mp4" />
+        <source src="/videos/louby_lou_promo.webm" type="video/webm" />
       </video>
     </div>
   );
