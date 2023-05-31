@@ -8,6 +8,7 @@ const Hero = ({ title }) => {
       <HeroTitle text={title} />
       <video autoPlay muted loop className={styles.video}>
         <source src="/videos/louby_lou_promo.webm" type="video/webm" />
+        <source src="/videos/louby_lou_promo.mp4" type="video/mp4" />
       </video>
     </div>
   );
