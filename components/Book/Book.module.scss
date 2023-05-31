@@ -1,14 +1,20 @@
 @import "../../styles/global/variables";
 
 .button {
-  height: 70px;
+  height: 30px;
   outline: none;
   border: none;
   font-family: $body-font;
-  font-size: $button;
+  font-size: $button-mobile;
   font-weight: bold;
   color: $background-dark;
-  width: 200px;
+  min-width: 50px;
   background-color: $accent-dark;
   margin-right: 5px;
+
+  @media only screen and (min-width: $tablet) {
+    height: 60px;
+    min-width: 200px;
+    font-size: $button;
+  }
 }

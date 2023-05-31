@@ -6,41 +6,61 @@
   position: fixed;
   min-width: 100%;
   max-height: 80px;
-  background-color: rgba(0, 0, 0, 0.17);
+  background-color: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background-color: rgba(0, 0, 0, 0.17);
+  }
 }
 
 .logo {
   margin-top: 10px;
-  max-width: 10%;
-  height: 100%;
+  max-width: 30%;
+  height: 100px;
   object-fit: cover;
   margin-left: 20px;
+  @media only screen and (min-width: $tablet) {
+    max-width: 10%;
+  }
 }
 
 .links {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 0%;
+
+  @media only screen and (min-width: $tablet) {
+    width: 50%;
+  }
 
   > * {
     color: $accent-dark;
+    display: none;
+
+    @media only screen and (min-width: $tablet) {
+      display: block;
+    }
   }
 }
 
 .button {
   height: 80px;
-  width: 10%;
+  width: 30%;
   background-color: $accent-dark;
   color: $background-dark;
-  font-size: 20px;
+  font-size: $button-mobile;
   border: none;
+  @media only screen and (min-width: $tablet) {
+    max-width: 10%;
+    font-size: $button;
+  }
 }
 
 .button,

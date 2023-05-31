@@ -12,7 +12,11 @@
 }
 
 .title__Container {
-  width: 30%;
+  width: 80%;
+
+  @media only screen and (min-width: $tablet) {
+    width: 30%;
+  }
 }
 
 .body__Container {

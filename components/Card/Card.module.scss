@@ -3,22 +3,42 @@
 .container__Left,
 .container__Right {
   width: 100%;
-  height: 550px;
+  height: 52%;
   display: flex;
+
+  @media only screen and (min-width: $tablet) {
+    height: 550px;
+  }
 }
 
 .container__Left {
-  flex-direction: row;
+  flex-direction: column;
+
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .container__Right {
-  flex-direction: row-reverse;
+  flex-direction: column;
+
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row-reverse;
+  }
 }
 
 .details__Container,
 .image__Container {
-  min-width: 50%;
+  width: 100%;
   height: 100%;
+
+  @media only screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.image__Container {
+  background-color: $background-light;
 }
 
 .details__Container {
@@ -28,6 +48,12 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  @media only screen and (min-width: $tablet) {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
 }
 
 .body__Container,

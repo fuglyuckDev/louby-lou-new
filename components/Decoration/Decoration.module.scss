@@ -8,9 +8,14 @@
 
 .left,
 .right {
-  width: 300px;
-  height: 30px;
-  background-color: $accent-light;
+  display: none;
+
+  @media only screen and (min-width: $tablet) {
+    width: 300px;
+    height: 30px;
+    background-color: $accent-light;
+    display: block;
+  }
 }
 
 .left {
