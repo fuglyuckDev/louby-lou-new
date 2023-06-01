@@ -50,11 +50,11 @@ export default function Home() {
           img={"/images/pictures/lucy_about_me.jpeg"}
         />
         <Decoration position={"left"} />
-        <Socials />
         <DividerTitle
           title={"we use this title element to break up the page"}
           text={["Keep this quite short, maybe a tagline?"]}
         />
+        <Socials />
       </main>
     </>
   );
