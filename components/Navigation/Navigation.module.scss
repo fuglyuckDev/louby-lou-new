@@ -35,17 +35,23 @@
   display: flex;
   justify-content: space-evenly;
   width: 0%;
+  display: none;
 
   @media only screen and (min-width: $tablet) {
     width: 50%;
+    display: flex;
   }
 
   > * {
-    color: $accent-dark;
-    display: none;
+    :nth-child(1) {
+      color: $accent-dark;
+      display: none;
+      text-decoration: none;
 
-    @media only screen and (min-width: $tablet) {
-      display: block;
+      @media only screen and (min-width: $tablet) {
+        display: block;
+        text-decoration: none;
+      }
     }
   }
 }

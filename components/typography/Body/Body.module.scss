@@ -9,6 +9,9 @@
   color: white;
 
   @media only screen and (min-width: $tablet) {
+    font-size: $body-mobile;
+  }
+  @media only screen and (min-width: $laptop) {
     font-size: $body;
   }
 }

@@ -1,0 +1,48 @@
+@import "../../styles/global/variables";
+
+.container {
+  display: block;
+
+  @media only screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.dialog {
+  transition: 0.5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 5px solid rgba(0, 0, 0, 0.39);
+}
+
+.dialog::backdrop {
+  background-color: none;
+}
+
+.links__Container {
+  margin-top: 80px;
+  text-decoration: none;
+}
+
+.links__Item {
+  list-style-type: none;
+}
+
+.links {
+  font-family: $body-font;
+  font-size: $title-small-mobile;
+  font-weight: 700;
+  text-decoration: none;
+  color: $accent-dark;
+  text-transform: uppercase;
+}
+
+.button__Close {
+  background: none;
+  border: none;
+  font-family: $body-font;
+  color: $accent-dark;
+  font-size: $title-small-mobile;
+  font-weight: 700;
+}
