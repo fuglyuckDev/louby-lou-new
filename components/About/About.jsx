@@ -4,9 +4,9 @@ import Body from "../typography/Body/Body";
 import styles from "./About.module.scss";
 import Book from "../Book/Book";
 
-const About = ({ title, body }) => {
+const About = ({ title, body, spacer }) => {
   return (
-    <div className={styles.container}>
+    <div className={spacer ? styles.container__Spacer : styles.container}>
       <div className={styles.about__Container}>
         {/* All text passed into titles gets turned into uppercase */}
         <div className={styles.title__Container}>

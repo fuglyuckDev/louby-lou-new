@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const Navigation = () => {
   let links = [
-    { name: "home", target: "/" },
-    { name: "Link 2", target: "/" },
-    { name: "Link 3", target: "/" },
-    { name: "Link 4", target: "/" },
-    { name: "Link 5", target: "/" },
+    { name: "HOME", target: "/" },
+    { name: "ABOUT", target: "/about" },
+    { name: "EVENTS", target: "/events" },
+    { name: "SERVICES", target: "/services" },
+    { name: "SHOP", target: "/shop" },
   ];
   return (
     <div className={styles.container}>

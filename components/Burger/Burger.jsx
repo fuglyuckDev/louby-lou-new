@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Burger = () => {
   let links = [
-    { name: "home", target: "/" },
-    { name: "Link 2", target: "/" },
-    { name: "link 3", target: "/" },
-    { name: "link 4", target: "/" },
-    { name: "link 5", target: "/" },
+    { name: "HOME", target: "/" },
+    { name: "ABOUT", target: "/about" },
+    { name: "EVENTS", target: "/events" },
+    { name: "SERVICES", target: "/services" },
+    { name: "SHOP", target: "/shop" },
   ];
 
   return (

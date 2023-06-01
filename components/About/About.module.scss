@@ -1,11 +1,16 @@
 @import "../../styles/global/variables";
 
-.container {
+.container,
+.container__Spacer {
   width: 100%;
   margin-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.container__Spacer {
+  margin-bottom: 300px;
 }
 
 .about__Container {
