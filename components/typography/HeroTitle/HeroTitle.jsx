@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./HeroTitle.module.scss";
 import Book from "@/components/Book/Book";
 
-const HeroTitle = ({ text }) => {
+const HeroTitle = ({ text, button }) => {
   return (
     <div className={styles.hero__Container}>
       <h1 className={styles.title}>{text}</h1>
       <div className={styles.button__Container}>
-        <Book />
+        <Book button={button} />
         <button>Birthday Parties</button>
       </div>
     </div>
