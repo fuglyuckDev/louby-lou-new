@@ -36,7 +36,7 @@ const Burger = () => {
         <div className={styles.links__Container}>
           <ul style={{ paddingLeft: 0 }}>
             {links.map((item, idx) => (
-              <li className={styles.links__Item}>
+              <li className={styles.links__Item} key={idx}>
                 <Link className={styles.links} href={item.target} key={idx}>
                   {item.name}
                 </Link>
