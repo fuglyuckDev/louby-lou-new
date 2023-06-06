@@ -5,7 +5,7 @@ import Body from "../typography/Body/Body";
 import Image from "next/image";
 import Book from "../Book/Book";
 
-const Card = ({ title, desc, img, pos }) => {
+const Card = ({ title, desc, img, pos, button }) => {
   return (
     <div
       className={
@@ -18,7 +18,7 @@ const Card = ({ title, desc, img, pos }) => {
         </div>
         <div className={styles.body__Container}>
           <Body text={desc} />
-          <Book />
+          <Book button={button} />
         </div>
       </div>
       <div className={styles.image__Container}>

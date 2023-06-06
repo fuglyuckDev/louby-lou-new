@@ -20,10 +20,7 @@ const pricing = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <DividerTitle
-          title="what package is best for you?"
-          text={["Look no further!"]}
-        />
+        <About title="what package is best for you?" body={[""]} />
         <Decoration position={"right"} />
         <Navigation />
         <Packages />

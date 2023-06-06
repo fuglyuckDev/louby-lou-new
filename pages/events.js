@@ -39,6 +39,7 @@ export default function events() {
           ]}
           pos={"left"}
           img={"/images/pictures/lucy_about_me.jpeg"}
+          button
         />
         <Card
           title={"Astley Point"}
@@ -48,6 +49,7 @@ export default function events() {
           ]}
           pos={"right"}
           img={"/images/pictures/lucy_about_me.jpeg"}
+          button
         />
         <Card
           title={"Ewe Bar"}
@@ -57,6 +59,7 @@ export default function events() {
           ]}
           pos={"left"}
           img={"/images/pictures/lucy_about_me.jpeg"}
+          button
         />
         <Socials />
       </main>

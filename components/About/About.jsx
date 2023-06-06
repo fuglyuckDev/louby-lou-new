@@ -4,7 +4,7 @@ import Body from "../typography/Body/Body";
 import styles from "./About.module.scss";
 import Book from "../Book/Book";
 
-const About = ({ title, body, spacer }) => {
+const About = ({ title, body, spacer, button }) => {
   return (
     <div className={spacer ? styles.container__Spacer : styles.container}>
       <div className={styles.about__Container}>
@@ -15,7 +15,7 @@ const About = ({ title, body, spacer }) => {
 
         {/* Pass an array into body to signify different paragraphs */}
         <Body text={body} />
-        <Book />
+        <Book button={button} />
       </div>
     </div>
   );

@@ -75,6 +75,7 @@ const services = () => {
             desc={item.desc}
             pos={isInt(idx / 2)}
             img={"/images/pictures/lucy_about_me.jpeg"}
+            button
           />
         ))}
         <Socials />
