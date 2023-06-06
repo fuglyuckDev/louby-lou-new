@@ -22,8 +22,8 @@ export default function Home() {
         <About
           title={"get to know louby lou"}
           body={[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus diam, ultrices at lectus vitae, tempor ullamcorper arcu. Sed pulvinar at tellus sit amet consectetur. Phasellus rutrum sollicitudin urna ac feugiat. Sed eleifend commodo risus, quis posuere justo.",
-            "Quisque sit amet luctus enim. Sed vel urna porta, gravida tellus eu, consequat justo. Nulla iaculis blandit fermentum. Vivamus metus justo, ultricies sit amet placerat non, aliquam ac ante. Donec semper mauris mi, quis pellentesque erat pretium sed. Cras sed sagittis lacus.",
+            "Heya! Lucy here, AKA Louby Lou! the North West’s #1 female clown! For 25 years I’ve been spreading giggles, Joy and Fun all around the North West! The best part of being a clown is being able to witness smiling parents, giggling children and above all sharing and creating memories that will last a lifetime! Since the ripe old age of 6, I’ve been developing my skills within the entertainment business, following in my father's footsteps, perfecting the recipe for the perfect celebration!",
+            "It starts with a base of good old-fashioned clown skills, laced with a generous dose of modern Ibiza dance tunes and a dash of the unexpected! A true recipe for Excitement! And who knows, maybe one of my 3 wonderful girls will carry the Louby Lou Legacy!",
           ]}
         />
         <Decoration position={"right"} />

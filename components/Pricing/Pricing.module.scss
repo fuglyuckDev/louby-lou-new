@@ -1,10 +1,28 @@
 @import "../../styles/global/variables";
 
 .container {
-  width: 287px;
+  height: 300px;
+  @media only screen and (min-width: $tablet) {
+    height: 622px;
+  }
+}
+
+.container,
+.container__Important {
+  max-width: 140px;
   background-color: #00a0fa;
   flex-direction: column-reverse;
   font-family: $body-font;
+  @media only screen and (min-width: $tablet) {
+    max-width: 287px;
+  }
+}
+
+.container__Important {
+  height: 350px;
+  @media only screen and (min-width: $tablet) {
+    height: 800px;
+  }
 }
 
 .package__Name,
@@ -16,9 +34,13 @@
 .inner__Container,
 .title__Container,
 .container,
-.options__Container {
-  border-radius: 54px;
+.options__Container,
+.container__Important {
+  border-radius: 25px;
   display: flex;
+  @media only screen and (min-width: $tablet) {
+    border-radius: 54px;
+  }
 }
 
 .inner__Container {
@@ -42,20 +64,27 @@
   margin-bottom: 0px;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 13px;
   line-height: 102.44%;
   text-align: center;
   letter-spacing: -0.035em;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
 }
 
 .package__Alt {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 8px;
   line-height: 102.4%;
   text-align: center;
   letter-spacing: -0.035em;
   color: white;
   width: 112px;
+  @media only screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .pricing__Container {
@@ -70,15 +99,21 @@
 
 .package__Price {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 102.4%;
   color: white;
+  @media only screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
 }
 
 .package__PerChild {
-  font-size: 12px;
+  font-size: 6px;
   margin-bottom: 3px;
   font-weight: bolder;
+  @media only screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
 }
 
 .options__Container {
@@ -95,9 +130,12 @@
   margin: 0;
   flex-direction: column;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 6px;
   flex-wrap: wrap;
   align-content: center;
+  @media only screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
 
   & > * {
     margin-top: 20px;
@@ -105,11 +143,17 @@
 }
 
 .enquire__Button {
-  width: 167.97px;
-  height: 27.54px;
+  width: 70px;
+  height: 13px;
   background-color: #00a0fa;
   border: none;
   border-radius: 12px;
   font-weight: 700;
+  font-size: 8px;
   color: $background-light;
+  @media only screen and (min-width: $tablet) {
+    font-size: 13px;
+    width: 167.97px;
+    height: 27.54px;
+  }
 }

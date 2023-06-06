@@ -4,12 +4,13 @@ import styles from "./Pricing.module.scss";
 const Pricing = ({ data }) => {
   return (
     <div
-      className={styles.container}
+      className={
+        data.important === true ? styles.container__Important : styles.container
+      }
       style={
         data.important === true
-          ? { height: 800, backgroundColor: data.colour }
+          ? { backgroundColor: data.colour }
           : {
-              height: 622,
               backgroundColor: data.colour,
             }
       }

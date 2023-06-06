@@ -24,7 +24,7 @@ const Navigation = () => {
       ></Image>
       <ul className={styles.links}>
         {links.map((item, idx) => (
-          <li>
+          <li key={idx}>
             <Link href={item.target} key={idx}>
               {item.name}
             </Link>

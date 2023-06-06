@@ -15,7 +15,45 @@ const services = () => {
       return "right";
     }
   }
-  let array = [1, 2, 3, 4, 5];
+  let array = [
+    {
+      name: "Parties",
+      desc: [
+        "Let's make the birthday child's special day one to remember! Louby Lou's mission is to make the birthday child the star of the show, helping Louby Lou throughout the performance, whether it's magic, singing or games! With a choice of a 1 hour show or a 2 hour show, a gift is guaranteed!",
+      ],
+    },
+    {
+      name: "Giggles on Wheels",
+      desc: [
+        "Looking for something a little more bitesized? Do big parties not tickle your fancy? How about some Giggles on Wheels?",
+        " 20 minutes of pure fun on your doorstep! Each visit being as unique as your little one! No matter the occasion, let's have some fun!",
+      ],
+    },
+    {
+      name: "Weddings & Christenings",
+      desc: [
+        "For a little one, keeping entertained can be a difficult task, especially at large family events! Louby Lou makes that uphill challenge a waterslide of fun and excitement, alleviating the pressure of parenting for the big day!",
+      ],
+    },
+    {
+      name: "Hospitals & Special Needs",
+      desc: [
+        "Qualifying as a 'Clown Doctor' in 1999, Louby Lou has extensive knowledge and expertise in dealing with those who require a gentler touch! Working with charities such as 'Medequip4kids' and 'Royal Manchester Children's Hospital'.",
+      ],
+    },
+    {
+      name: "Schools",
+      desc: [
+        "School is such a big part of a little one's life, from Preschool to High school! Why not make this experience magical with Louby Lou! With age adaptable shows, the magic will always flow!",
+      ],
+    },
+    {
+      name: "Corporate",
+      desc: [
+        "From the big stage in The Trafford Centre to the small office gatherings, Louby Lou can do it all. Working for large organisations such as McVities & Kelloggs, Louby Lou has gathered quite an impressive repertoire for any corporate occasion.",
+      ],
+    },
+  ];
   return (
     <>
       <Head>
@@ -33,11 +71,8 @@ const services = () => {
         <Decoration position={"right"} />
         {array.map((item, idx) => (
           <Card
-            title={`title card ${item}`}
-            desc={[
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus diam, ultrices at lectus vitae, tempor ullamcorper arcu. Sed pulvinar at tellus sit amet consectetur. Phasellus rutrum sollicitudin urna ac feugiat. Sed eleifend commodo risus, quis posuere justo.",
-              "Quisque sit amet luctus enim. Sed vel urna porta, gravida tellus eu, consequat justo. Nulla iaculis blandit fermentum. Vivamus metus justo, ultricies sit amet placerat non, aliquam ac ante. Donec semper mauris mi, quis pellentesque erat pretium sed. Cras sed sagittis lacus.",
-            ]}
+            title={item.name}
+            desc={item.desc}
             pos={isInt(idx / 2)}
             img={"/images/pictures/lucy_about_me.jpeg"}
           />
