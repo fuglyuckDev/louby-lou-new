@@ -1,0 +1,14 @@
+@import "../../styles/global/variables";
+
+.container {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.details__Container {
+  width: 30%;
+}

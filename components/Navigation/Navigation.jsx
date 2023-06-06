@@ -10,6 +10,7 @@ const Navigation = () => {
     { name: "ABOUT", target: "/about" },
     { name: "EVENTS", target: "/events" },
     { name: "SERVICES", target: "/services" },
+    { name: "PRICING", target: "/pricing" },
     { name: "SHOP", target: "/shop" },
   ];
   return (
