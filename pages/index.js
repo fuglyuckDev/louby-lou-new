@@ -6,7 +6,6 @@ import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
 import Decoration from "@/components/Decoration/Decoration";
 import Card from "@/components/Card/Card";
 import Socials from "@/components/Socials/Socials";
-import { useEffect, useState } from "react";
 import homeData from "./api/json/home.json";
 
 export async function getStaticProps() {
@@ -46,6 +45,7 @@ export default function Home({ pageData }) {
             pos={item.position}
             img={item.image}
             key={idx}
+            button
           />
         ))}
 

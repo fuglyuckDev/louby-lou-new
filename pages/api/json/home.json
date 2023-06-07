@@ -29,29 +29,29 @@
     },
     "dividerTitle": {
       "top": {
-        "title": "we use this title element to break up the page",
-        "text": ["Keep this quite short, maybe a tagline?"]
+        "title": "25 years of giggles fun and joy",
+        "text": ["More than just entertainment."]
       },
       "bottom": {
-        "title": "we use this title element to break up the page",
+        "title": "This is just a test",
         "text": ["Keep this quite short, maybe a tagline?"]
       }
     },
     "cards": [
       {
-        "title": "test title",
+        "title": "Check out my events",
         "description": [
-          "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-          "Now this is just an example of another paragraph, separated using an array rather than just plain text"
+          "What are Louby Lou events, you say? Well, they're a typical Louby Lou show held at a venue near you!",
+          "Picture it, a lovely venue, you, your little ones, music, food, drink and an unmatched giggly energy!"
         ],
         "position": "left",
         "image": "/images/pictures/lucy_about_me.jpeg"
       },
       {
-        "title": "test title",
+        "title": "It's party time",
         "description": [
-          "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-          "Now this is just an example of another paragraph, separated using an array rather than just plain text"
+          "We all know the little ones deserve a party like no other.",
+          "Book louby lou for a range of events, such as Birthday parties, School events, Christenings & Weddings, Hospitals and much more!"
         ],
         "position": "right",
         "image": "/images/pictures/lucy_about_me.jpeg"
