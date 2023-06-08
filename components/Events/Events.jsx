@@ -94,7 +94,7 @@ const Events = ({ position, data }) => {
           <div className={styles.names__Container}>
             <p>{"Child's Name(s)"}</p>
             {array.map((item, idx) => (
-              <div className={styles.input__Container}>
+              <div key={idx} className={styles.input__Container}>
                 <input></input>
                 <button>CONFIRM</button>
               </div>
