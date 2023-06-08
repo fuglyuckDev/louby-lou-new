@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "id": "Ewe-21-05-23",
+      "name": "Ewe Bar",
+      "date": "21/05/23",
+      "price": [{ "adult": 2 }, { "child": 8 }],
+      "length": 1.5,
+      "postCode": "BL5 3NB",
+      "time": "12:00:00.000",
+      "imgURL": "",
+      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+    },
+    {
+      "id": "Delph-28-05-23",
+      "name": "The Delph",
+      "date": "28/05/23",
+      "price": [{ "adult": 2 }, { "child": 8 }],
+      "length": 1.5,
+      "postCode": "M28 2NL",
+      "time": "18:00:00.000",
+      "imgURL": "",
+      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+    },
+    {
+      "id": "Point-28-05-23",
+      "name": "The Point",
+      "date": "28/05/23",
+      "price": [{ "adult": 2 }, { "child": 8 }],
+      "length": 1.5,
+      "postCode": "M29 7SG",
+      "time": "17:00:00.000",
+      "imgURL": "",
+      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+    }
+  ]
+}

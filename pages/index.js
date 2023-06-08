@@ -8,7 +8,7 @@ import Card from "@/components/Card/Card";
 import Socials from "@/components/Socials/Socials";
 import homeData from "./api/json/home.json";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const pageData = await homeData;
   return {
     props: {
