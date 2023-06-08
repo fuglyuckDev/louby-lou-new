@@ -6,6 +6,7 @@ import Card from "@/components/Card/Card";
 import Decoration from "@/components/Decoration/Decoration";
 import Socials from "@/components/Socials/Socials";
 import About from "@/components/About/About";
+import Events from "@/components/Events/Events";
 
 export default function events() {
   return (
@@ -24,43 +25,10 @@ export default function events() {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus diam, ultrices at lectus vitae, tempor ullamcorper arcu. Sed pulvinar at tellus sit amet consectetur. Phasellus rutrum sollicitudin urna ac feugiat. Sed eleifend commodo risus, quis posuere justo.",
             "Quisque sit amet luctus enim. Sed vel urna porta, gravida tellus eu, consequat justo. Nulla iaculis blandit fermentum. Vivamus metus justo, ultricies sit amet placerat non, aliquam ac ante. Donec semper mauris mi, quis pellentesque erat pretium sed. Cras sed sagittis lacus.",
           ]}
-        />
-        <Decoration position={"right"} />
-        <DividerTitle
-          title={"Get your giggle on"}
-          text={["Looking for a dose of Louby Lou? Look no further!"]}
+          spacer
         />
         <Decoration position={"left"} />
-        <Card
-          title={"The Delph"}
-          desc={[
-            "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-            "Now this is just an example of another paragraph, separated using an array rather than just plain text",
-          ]}
-          pos={"left"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
-          button
-        />
-        <Card
-          title={"Astley Point"}
-          desc={[
-            "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-            "Now this is just an example of another paragraph, separated using an array rather than just plain text",
-          ]}
-          pos={"right"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
-          button
-        />
-        <Card
-          title={"Ewe Bar"}
-          desc={[
-            "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-            "Now this is just an example of another paragraph, separated using an array rather than just plain text",
-          ]}
-          pos={"left"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
-          button
-        />
+        <Events position={false} />
         <Socials />
       </main>
     </>
