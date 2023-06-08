@@ -35,7 +35,6 @@ export default function events({ eventsData }) {
           ]}
           spacer
         />
-        <Decoration position={"right"} />
         {eventsData.events.map((item, idx) => (
           <Events key={idx} position={Number.isInteger(idx / 2)} data={item} />
         ))}

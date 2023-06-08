@@ -8,10 +8,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  * {
-    color: $background-dark;
-  }
+.container h1 {
+  color: $background-dark;
 }
 
 .title__Container {
