@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Events.module.scss";
 import Image from "next/image";
 
-const Events = ({ position }) => {
+const Events = ({ position, data }) => {
   const array = [1];
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ const Events = ({ position }) => {
       >
         <div className={styles.image__Container}>
           <Image
-            src={"/images/pictures/ewe bar.jpg"}
+            src={data.imgURL}
             width={500}
             height={500}
             className={styles.event__Image}
@@ -23,7 +23,7 @@ const Events = ({ position }) => {
         </div>
         <div className={styles.event__Details}>
           <div className={styles.details__Container}>
-            <h1>ewe bar</h1>
+            <h1>{data.name}</h1>
             <div className={styles.event__Location}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Events = ({ position }) => {
                   </clipPath>
                 </defs>
               </svg>
-              <p>370 Chorley Rd, Bolton BL5 3NB</p>
+              <p>{data.postCode}</p>
             </div>
             <div className={styles.event__Time}>
               <svg
@@ -68,23 +68,25 @@ const Events = ({ position }) => {
                   fill="#858585"
                 />
               </svg>
-              <p>21/05/23 - 10:00 PM</p>
+              <p>
+                {data.date} {`(${data.length} Hours)`}
+              </p>
             </div>
           </div>
           <div className={styles.pricing__Container}>
             <div className={styles.pricing__Child}>
-              <h1>£5</h1> <p>/ Child</p>
+              <h1>£{data.price[1].child}</h1> <p>/ Child</p>
               <div className={styles.counter}>
                 <button>-</button>
-                <p>1</p>
+                <p>0</p>
                 <button>+</button>
               </div>
             </div>
             <div className={styles.pricing__Adult}>
-              <h1>£0</h1> <p>/ Adult</p>
+              <h1>£{data.price[0].adult}</h1> <p>/ Adult</p>
               <div className={styles.counter}>
                 <button>-</button>
-                <p>1</p>
+                <p>0</p>
                 <button>+</button>
               </div>
             </div>

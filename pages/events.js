@@ -1,14 +1,22 @@
 import React from "react";
 import Head from "next/head";
-import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
 import Navigation from "@/components/Navigation/Navigation";
-import Card from "@/components/Card/Card";
 import Decoration from "@/components/Decoration/Decoration";
 import Socials from "@/components/Socials/Socials";
 import About from "@/components/About/About";
 import Events from "@/components/Events/Events";
+import events__Data from "./api/json/eventsList.json";
 
-export default function events() {
+export async function getServerSideProps() {
+  const eventsData = await events__Data;
+  return {
+    props: {
+      eventsData,
+    },
+  };
+}
+
+export default function events({ eventsData }) {
   return (
     <>
       <Head>
@@ -27,8 +35,11 @@ export default function events() {
           ]}
           spacer
         />
-        <Decoration position={"left"} />
-        <Events position={false} />
+        <Decoration position={"right"} />
+        {eventsData.events.map((item, idx) => (
+          <Events key={idx} position={Number.isInteger(idx / 2)} data={item} />
+        ))}
+
         <Socials />
       </main>
     </>
