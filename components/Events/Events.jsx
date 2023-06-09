@@ -1,11 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Events.module.scss";
 import Image from "next/image";
 
 const Events = ({ position, data }) => {
-  const array = [1];
+  const [childCount, setChildCount] = useState(0);
+  const [adultCount, setAdultCount] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [names, setNames] = useState([]);
+  const [lineItems, setLineItems] = useState({});
+
+  let stripeData = [
+    {
+      amount: total * 100,
+      name: data.name + " " + data.date,
+      currency: "GBP",
+      quantity: 1,
+      description: `${adultCount}x Adults, ${childCount}x Children (${names.join(
+        ", "
+      )})`,
+    },
+  ];
+
+  useEffect(() => {
+    setTotal(
+      childCount * data.price[1].child + adultCount * data.price[0].adult
+    );
+  }, [childCount, adultCount]);
+
+  useEffect(() => {
+    childCount === 0 ? setNames([]) : null;
+  }, [childCount]);
+
+  useEffect(() => {
+    setLineItems(stripeData);
+  }, [childCount, adultCount, names, total]);
+
+  const handleNames = (e) => {
+    e.preventDefault();
+    setNames([...names, e.target[0].value]);
+  };
+
+  const checkNames = (input, e) => {
+    input.value !== ""
+      ? (e.target.className = styles.confirm__Button__Greyed)
+        ? (input.style = "color: #cf21ec; pointer-events: none")
+        : null
+      : null;
+  };
+
   return (
     <div className={styles.container}>
+      <dialog className={styles.event__Description} id={data.id}>
+        <h1>{data.name}</h1>
+        <div>
+          <p>{data.description}</p>
+          <div
+            onClick={() => {
+              document.getElementById(data.id).close();
+            }}
+          >
+            <h1>X</h1>
+          </div>
+        </div>
+      </dialog>
       <div
         className={
           position === true
@@ -16,14 +73,38 @@ const Events = ({ position, data }) => {
         <div className={styles.image__Container}>
           <Image
             src={data.imgURL}
-            width={500}
-            height={500}
+            width={200}
+            height={200}
             className={styles.event__Image}
+            alt={`Image from ${data.name} at ${data.postCode}`}
           />
         </div>
         <div className={styles.event__Details}>
           <div className={styles.details__Container}>
-            <h1>{data.name}</h1>
+            <div className={styles.title__Container}>
+              <h1>{data.name}</h1>
+              <div
+                onClick={() => {
+                  document.getElementById(data.id).showModal();
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M8.41 0C3.7653 0 0 3.76525 0 8.41C0 13.0547 3.7653 16.82 8.41 16.82C13.0548 16.82 16.82 13.0547 16.82 8.41C16.82 3.76525 13.0548 0 8.41 0ZM8.41 15.138C4.70019 15.138 1.682 12.1198 1.682 8.41C1.682 4.70019 4.70019 1.682 8.41 1.682C12.1199 1.682 15.138 4.70019 15.138 8.41C15.138 12.1198 12.1199 15.138 8.41 15.138ZM9.46309 5.046C9.46309 5.65576 9.01914 6.09725 8.41854 6.09725C7.79366 6.09725 7.36059 5.65576 7.36059 5.03434C7.36059 4.43707 7.80538 3.99475 8.41854 3.99475C9.01914 3.99475 9.46309 4.43707 9.46309 5.046ZM7.57084 7.569H9.25284V12.615H7.57084V7.569Z"
+                    fill="#858585"
+                  />
+                </svg>
+              </div>
+            </div>
+
             <div className={styles.event__Location}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +113,7 @@ const Events = ({ position, data }) => {
                 viewBox="0 0 17 18"
                 fill="none"
               >
-                <g clip-path="url(#clip0_153_263)">
+                <g clipPath="url(#clip0_153_263)">
                   <path
                     d="M8.46061 0.921326C5.00104 0.921326 2.18652 3.73697 2.18652 7.19791C2.18652 12.3545 7.83611 17.3894 8.0767 17.6013C8.18638 17.6979 8.32347 17.7463 8.46061 17.7463C8.59776 17.7463 8.73485 17.6979 8.84458 17.6013C9.08506 17.3895 14.7347 12.3545 14.7347 7.19791C14.7347 3.73697 11.9202 0.921326 8.46061 0.921326ZM8.46061 16.369C7.21155 15.1586 3.3484 11.099 3.3484 7.19791C3.3484 4.37768 5.64174 2.08321 8.46061 2.08321C11.2795 2.08321 13.5728 4.37768 13.5728 7.19791C13.5728 11.0989 9.70968 15.1586 8.46061 16.369Z"
                     fill="#858585"
@@ -77,35 +158,101 @@ const Events = ({ position, data }) => {
             <div className={styles.pricing__Child}>
               <h1>£{data.price[1].child}</h1> <p>/ Child</p>
               <div className={styles.counter}>
-                <button>-</button>
-                <p>0</p>
-                <button>+</button>
+                <button
+                  onClick={() => {
+                    childCount === 0 ? null : setChildCount(childCount - 1);
+                  }}
+                >
+                  -
+                </button>
+                <p>{childCount}</p>
+                <button
+                  onClick={() => {
+                    setChildCount(childCount + 1);
+                  }}
+                >
+                  +
+                </button>
               </div>
             </div>
             <div className={styles.pricing__Adult}>
               <h1>£{data.price[0].adult}</h1> <p>/ Adult</p>
               <div className={styles.counter}>
-                <button>-</button>
-                <p>0</p>
-                <button>+</button>
+                <button
+                  onClick={() => {
+                    adultCount === 0 ? null : setAdultCount(adultCount - 1);
+                  }}
+                >
+                  -
+                </button>
+                <p>{adultCount}</p>
+                <button
+                  onClick={() => {
+                    setAdultCount(adultCount + 1);
+                  }}
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
           <div className={styles.names__Container}>
-            <p>{"Child's Name(s)"}</p>
-            {array.map((item, idx) => (
-              <div key={idx} className={styles.input__Container}>
-                <input></input>
-                <button>CONFIRM</button>
-              </div>
-            ))}
+            <p>{"Child's Name(s):"}</p>
+            {Array(childCount)
+              .fill("")
+              .map((item, idx) => (
+                <form
+                  onSubmit={handleNames}
+                  key={idx}
+                  className={styles.input__Container}
+                >
+                  <input
+                    id={`${data.name} ${idx}`}
+                    required
+                    placeholder="Child's Name"
+                  ></input>
+                  <button
+                    onClick={(e) => {
+                      checkNames(
+                        document.getElementById(`${data.name} ${idx}`),
+                        e
+                      );
+                    }}
+                    type="submit"
+                  >
+                    CONFIRM
+                  </button>
+                </form>
+              ))}
           </div>
           <div className={styles.checkout__Container}>
             <div className={styles.total__Container}>
-              <h1>£5</h1>
+              <h1>£{total}</h1>
               <p>/ Total</p>
             </div>
-            <button>BOOK NOW </button>
+            <form action={"/api/checkout_session"} method="POST">
+              <input
+                name="data"
+                value={JSON.stringify(lineItems)}
+                type="hidden"
+              ></input>
+              <section>
+                <button
+                  type="submit"
+                  className={
+                    adultCount === 0
+                      ? styles.button__Greyed
+                      : childCount !== names.length
+                      ? styles.button__Greyed
+                      : childCount === 0
+                      ? styles.button__Greyed
+                      : null
+                  }
+                >
+                  BOOK NOW
+                </button>
+              </section>
+            </form>
           </div>
         </div>
       </div>

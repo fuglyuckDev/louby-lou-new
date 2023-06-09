@@ -1,5 +1,9 @@
 @import "../../styles/global/variables";
 
+.displayNone {
+  display: none;
+}
+
 .container {
   background-color: $background-light;
   border-radius: 18px;
@@ -35,6 +39,45 @@
 
 .details__Container h1 {
   margin-top: 20px;
+}
+
+.title__Container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.title__Container svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.event__Description {
+  transition: 0.5;
+  width: 70%;
+  border: none;
+  background-color: $background-light;
+  border-radius: 15px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 30%;
+  }
+
+  :nth-child(2) {
+    display: flex;
+    margin-top: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    :nth-child(2) h1 {
+      margin-left: 10px;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.event__Description::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .event__Container {
@@ -85,6 +128,12 @@
   margin-left: 13px;
 }
 
+.counter button,
+.input__Container button,
+.checkout__Container button {
+  cursor: pointer;
+}
+
 .event__Location,
 .event__Time {
   margin: 10px 0px 10px 0px;
@@ -98,8 +147,8 @@
   background: $background-dark;
 }
 
-.input__Container button {
-  background-color: $accent-dark;
+.input__Container button,
+.confirm__Button__Greyed {
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -107,6 +156,16 @@
   color: $background-dark;
   font-family: $body-font;
   margin-right: 5px;
+}
+
+.input__Container button {
+  background-color: $accent-dark;
+  pointer-events: all;
+}
+.confirm__Button__Greyed {
+  background-color: #858585 !important;
+  text-decoration: line-through;
+  pointer-events: none;
 }
 
 .pricing__Container {
@@ -179,16 +238,26 @@
   margin-top: 46px;
 }
 
-.checkout__Container button {
-  background: #cf21ec;
+.checkout__Container button,
+.button__Greyed {
   font-family: $body-font;
   border-radius: 9px;
   border: none;
   font-weight: 800;
   font-size: 16px;
-  color: $background-dark;
   width: 176.26px;
   height: 36.05px;
+}
+
+.checkout__Container button {
+  background: $accent-dark;
+  color: $background-dark;
+}
+
+.button__Greyed {
+  background: #858585 !important;
+  text-decoration: line-through;
+  pointer-events: none;
 }
 
 .checkout__Container {

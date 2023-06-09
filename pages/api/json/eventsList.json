@@ -8,7 +8,7 @@
       "length": 1.5,
       "postCode": " 370 Chorley Rd, Bolton BL5 3NB",
       "imgURL": "/images/pictures/ewe bar.jpg",
-      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+      "description": "This is just an example description for ewe, this will have more details on it once we figure out the details section or something."
     },
     {
       "id": "Delph-28-05-23",
@@ -18,7 +18,7 @@
       "length": 1.5,
       "postCode": "Worsley Rd, Worsley, M28 2NL",
       "imgURL": "/images/pictures/the_delph.jpg",
-      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+      "description": "This is just an example description for the delph, this will have more details on it once we figure out the details section or something."
     },
     {
       "id": "Point-28-05-23",
@@ -28,7 +28,7 @@
       "length": 1.5,
       "postCode": "Ann Ln, Tyldesley, Astley, M29 7SG",
       "imgURL": "/images/pictures/astley_point.jpg",
-      "description": "This is just an example description, this will have more details on it once we figure out the details section or something."
+      "description": "This is just an example description for the point, this will have more details on it once we figure out the details section or something."
     }
   ]
 }
