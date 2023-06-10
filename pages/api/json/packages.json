@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Silly Silver",
+    "basePrice": "£350",
+    "priceRaw": 350,
+    "maxKids": 10,
+    "added": 10,
+    "options": [
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option"
+    ],
+    "color": "#BDBDBD"
+  },
+  {
+    "name": "Golden Giggles",
+    "basePrice": "£400",
+    "priceRaw": 400,
+    "maxKids": 20,
+    "added": 10,
+    "options": [
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option"
+    ],
+    "color": "#EFB94F"
+  },
+  {
+    "name": "Playful Platinum",
+    "basePrice": "£450",
+    "priceRaw": 450,
+    "maxKids": 30,
+    "added": 10,
+    "options": [
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option"
+    ],
+    "color": "#4690FF"
+  },
+  {
+    "name": "Crazy Custom",
+    "basePrice": "£450+",
+    "priceRaw": 450,
+    "maxKids": 30,
+    "added": 10,
+    "options": [
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option",
+      "Option"
+    ],
+    "color": "#CF21EC"
+  }
+]

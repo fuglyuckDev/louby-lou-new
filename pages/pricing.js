@@ -1,16 +1,23 @@
-import About from "@/components/About/About";
-import Decoration from "@/components/Decoration/Decoration";
 import Navigation from "@/components/Navigation/Navigation";
-import PackageDetails from "@/components/PackageDetails/PackageDetails";
-import Packages from "@/components/Packages/Packages";
 import Pricing from "@/components/Pricing/Pricing";
 import Socials from "@/components/Socials/Socials";
 import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
-import Title from "@/components/typography/Title/Title";
 import Head from "next/head";
 import React from "react";
+import pricingJSON from "./api/json/packages.json";
+import PricingContainer from "@/components/PricingContainer/PricingContainer";
+import About from "@/components/About/About";
 
-const pricing = () => {
+export async function getStaticProps() {
+  const pricingData = await pricingJSON;
+  return {
+    props: {
+      pricingData,
+    },
+  };
+}
+
+const pricing = ({ pricingData }) => {
   return (
     <>
       <Head>
@@ -20,12 +27,19 @@ const pricing = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <About title="what package is best for you?" body={[""]} />
-        <Decoration position={"right"} />
         <Navigation />
-        <Packages />
-        <PackageDetails />
-        <DividerTitle title={""} text={[""]} />
+        <About
+          title={"Looking to book?"}
+          body={[
+            "Look no further!",
+            "Have a look at my packages! Can't find what you're looking for? Feel free to get in touch!",
+          ]}
+        />
+        <PricingContainer data={pricingData} />
+        <DividerTitle
+          title={"Use this as a divider"}
+          text={["It's really a great way to break up the page!"]}
+        />
         <Socials />
       </main>
     </>
