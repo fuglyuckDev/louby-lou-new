@@ -46,6 +46,7 @@ export default function Home({ pageData }) {
             img={item.image}
             key={idx}
             button
+            buttonType={item.buttonAction}
           />
         ))}
 

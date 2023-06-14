@@ -37,31 +37,35 @@
     width: 40%;
   }
 
-  & > button {
-    outline: none;
-    border: none;
-    font-family: $body-font;
-    font-size: $button-mobile;
-    font-weight: bold;
-    color: $background-dark;
-
-    @media only screen and (min-width: $tablet) {
-      font-size: $button;
-    }
-  }
-
   :nth-child(1) {
-    width: 50%;
+    width: 98%;
   }
 
   :nth-child(2) {
-    height: 30px;
     width: 50%;
-    background-color: $accent-light;
+    :nth-child(1) {
+      height: 30px;
+      width: 100%;
+      background-color: $accent-light;
+      cursor: pointer;
 
-    @media only screen and (min-width: $tablet) {
-      font-size: $button;
-      height: 60px;
+      @media only screen and (min-width: $tablet) {
+        font-size: $button;
+        height: 60px;
+      }
     }
+  }
+}
+
+.button__Container button {
+  outline: none;
+  border: none;
+  font-family: $body-font;
+  font-size: $button-mobile;
+  font-weight: bold;
+  color: $background-dark;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: $button;
   }
 }

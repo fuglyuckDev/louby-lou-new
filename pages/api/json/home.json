@@ -45,7 +45,8 @@
           "Picture it, a lovely venue, you, your little ones, music, food, drink and an unmatched giggly energy!"
         ],
         "position": "left",
-        "image": "/images/pictures/lucy_about_me.jpeg"
+        "image": "/images/pictures/lucy_about_me.jpeg",
+        "buttonAction": "events"
       },
       {
         "title": "It's party time",
@@ -54,7 +55,8 @@
           "Book Louby Lou for a range of events, such as Birthday parties, School events, Christenings & Weddings, Hospitals and much more!"
         ],
         "position": "right",
-        "image": "/images/pictures/lucy_about_me.jpeg"
+        "image": "/images/pictures/lucy_about_me.jpeg",
+        "buttonAction": "services"
       }
     ]
   }
