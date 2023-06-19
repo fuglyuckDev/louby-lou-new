@@ -7,6 +7,7 @@ import Decoration from "@/components/Decoration/Decoration";
 import Card from "@/components/Card/Card";
 import Socials from "@/components/Socials/Socials";
 import homeData from "./api/json/home.json";
+import Companies from "@/components/Companies/Companies";
 
 export async function getServerSideProps() {
   const pageData = await homeData;
@@ -35,6 +36,7 @@ export default function Home({ pageData }) {
         <About title={content.about.title} body={content.about.body} />
         <Decoration position={content.decoration.top.position} />
         <DividerTitle
+          spacing={"large"}
           title={content.dividerTitle.top.title}
           text={content.dividerTitle.top.text}
         />
@@ -51,11 +53,14 @@ export default function Home({ pageData }) {
         ))}
 
         <Decoration position={content.decoration.bottom.position} />
+
         <DividerTitle
           title={content.dividerTitle.bottom.title}
           text={content.dividerTitle.bottom.text}
+          spacing={"large"}
         />
         <Socials />
+        <Companies />
       </main>
     </>
   );

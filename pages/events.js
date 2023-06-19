@@ -6,6 +6,7 @@ import Socials from "@/components/Socials/Socials";
 import About from "@/components/About/About";
 import Events from "@/components/Events/Events";
 import events__Data from "./api/json/eventsList.json";
+import Companies from "@/components/Companies/Companies";
 
 export async function getServerSideProps() {
   const eventsData = await events__Data;
@@ -40,6 +41,7 @@ export default function events({ eventsData }) {
         ))}
 
         <Socials />
+        <Companies />
       </main>
     </>
   );

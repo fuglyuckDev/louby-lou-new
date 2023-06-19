@@ -16,11 +16,13 @@
       }
     },
     "about": {
-      "title": "get to know louby lou",
+      "title": "welcome everyone",
       "body": [
-        "Heya! Lucy here, AKA Louby Lou! the North West’s #1 female clown!",
-        "For 25 years I’ve been spreading giggles, Joy and Fun all around the North West! The best part of being a clown is being able to witness smiling parents, giggling children and above all sharing and creating memories that will last a lifetime! Since the ripe old age of 6, I’ve been developing my skills within the entertainment business, following in my father's footsteps, perfecting the recipe for the perfect celebration!",
-        "It starts with a base of good old-fashioned clown skills, laced with a generous dose of modern Ibiza dance tunes and a dash of the unexpected! A true recipe for Excitement! And who knows, maybe one of my 3 wonderful girls will carry the Louby Lou Legacy!"
+        "Heya! Louby Lou here, if it's laughter you're after, then you've come to the right place...",
+        "For over 25 years, I have been the performing as a clown and children's entertainer across Manchester, Lancashire, Merseyside and the rest of The North West. It's always a pleasure to see smiles and joy on the faces of the families I meet and spreading magic and joy is what life is all about.",
+        "For me, the best part of being a clown and performing as Louby Lou, is being able to see happy parents, giggling children and above all, sharing and creating memories that will last a lifetime! This is something I have been doing since the age of 6, developing my skills, travelling and performing in the entertainment business, following in my father's footsteps, Trumble The Clown.",
+        "Every show is different, whether its a private party, birthday celebration, corporate event or festival performance, but each gig has a base of good old-fashioned, traditional clowning and childrens entertainment. Over the years my style and shows have evolved, with the inclusion of puppetry, some Ibiza dance tunes, with a dash of saxophone and of course, plenty of magic! The perfect recipe for an amazing party atmosphere!",
+        "So if you'd like to hear more about me or experience some giggles for yourself, then please, get in touch, I can't wait to hear from you!"
       ]
     },
     "decoration": {
@@ -29,20 +31,19 @@
     },
     "dividerTitle": {
       "top": {
-        "title": "25 years of giggles fun and joy",
-        "text": ["More than just entertainment."]
+        "title": "25 Years of Louby Lou Giggles, Fun & Magic",
+        "text": ["Fun for all, magic for many and parties to remember!"]
       },
       "bottom": {
-        "title": "This is just a test",
-        "text": ["Keep this quite short, maybe a tagline?"]
+        "title": "WHAT MY CLIENTS SAY",
+        "text": [""]
       }
     },
     "cards": [
       {
         "title": "Check out my events",
         "description": [
-          "What are Louby Lou events, you say? Well, they're a typical Louby Lou show held at a venue near you!",
-          "Picture it, a lovely venue, you, your little ones, music, food, drink and an unmatched giggly energy!"
+          "There are Louby Lou events across the North West weekly! I perform at some amazing family friendly venues across the region, so why not see if there is one near you and come along and say hi!"
         ],
         "position": "left",
         "image": "/images/pictures/lucy_about_me.jpeg",
@@ -51,8 +52,8 @@
       {
         "title": "It's party time",
         "description": [
-          "We all know the little ones deserve a party like no other.",
-          "Book Louby Lou for a range of events, such as Birthday parties, School events, Christenings & Weddings, Hospitals and much more!"
+          "If you are looking for a magical party, then look no further!",
+          "You can book Louby Lou for a range of events, such as birthday parties, school events, christenings, weddings, corporate events and much more!"
         ],
         "position": "right",
         "image": "/images/pictures/lucy_about_me.jpeg",

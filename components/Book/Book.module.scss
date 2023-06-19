@@ -11,6 +11,7 @@
   min-width: 50px;
   background-color: $accent-dark;
   margin-right: 5px;
+  cursor: pointer;
 
   @media only screen and (min-width: $tablet) {
     height: 60px;

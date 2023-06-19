@@ -1,5 +1,6 @@
 import About from "@/components/About/About";
 import Card from "@/components/Card/Card";
+import Companies from "@/components/Companies/Companies";
 import Navigation from "@/components/Navigation/Navigation";
 import Socials from "@/components/Socials/Socials";
 import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
@@ -18,28 +19,56 @@ const about = () => {
       <main>
         <Navigation />
         <About
-          title={"Who exactly is Louby Lou?"}
-          body={[
-            "Louby lou is Quisque sit amet luctus enim. Sed vel urna porta, gravida tellus eu, consequat justo. Nulla iaculis blandit fermentum. Vivamus metus justo, ultricies sit amet placerat non, aliquam ac ante. Donec semper mauris mi, quis pellentesque erat pretium sed. Cras sed sagittis lacus.",
-          ]}
+          title={"GET TO KNOW LOUBY LOU"}
+          body={["Let's take you on a journey through Louby Lou's past!"]}
           spacer
         />
         <Card
-          title={"Why Louby Lou?"}
+          title={""}
           desc={[
-            "This is a test description, just for looking at sake, I would use lorem ipsum but I feel like that's overused",
-            "Now this is just an example of another paragraph, separated using an array rather than just plain text",
+            "From the age of 6 I have been immersed in world of children's entertainment. My dad Arnold aka Trumble The Clown, was touring and gigging across the country, often taking me with him as his helper and apprentice clown.",
+            "I knew from the first party I went to with him, this was my calling and what I wanted to do! It wasn't long before the bug turned into a job, and I was accompanying my dad to his parties as Louby Lou and so started my clowning journey. ",
           ]}
           pos={"right"}
           img={"/images/pictures/lucy_about_me.jpeg"}
+        />
+        <Card
+          title={""}
+          desc={[
+            "I started gigging solo at the age of XX, starting with small parties and events in my local town, but soon grew to bigger performances on grander stages.",
+            "However, I've always stayed grounded and love parties of any size, as it doesn't matter to me how big the crowd is, as long as their is magic and laughter.",
+          ]}
+          pos={"left"}
+          img={"/images/pictures/lucy_about_me.jpeg"}
+        />
+        <Card
+          title={""}
+          desc={[
+            "I am very proud of the journey I have taken and so grateful to my dad for his knowledge and support, as well as that of my amazing husband Stu and my gorgeous 3 girls... who knows, maybe one of them will be a third generation clown?",
+            "From the birth of Louby Lou to now, I have always put the joy of the audience first, building on my skills, adding new elements to my shows and taking advice, guidance and feedback to continually put on the best entertainment for my audience. ",
+          ]}
+          pos={"right"}
+          img={"/images/pictures/lucy_about_me.jpeg"}
+        />
+
+        <About
+          title={"WHY CHOOSE LOUBY LOU?"}
+          body={[
+            "As well as experience and heritage, each show is personalised and tailored to your needs.",
+            "Whether you want magic and music or silly stuff, Louby Lou offers the best in live entertainment for any party.",
+          ]}
+          button
+          buttonType={"services"}
         />
         <DividerTitle
           title={"Want to keep in the loop?"}
           text={[
             "Scroll down to find my socials, or check the bottom of the page for my personal contact details!",
           ]}
+          spacing={"large"}
         />
         <Socials />
+        <Companies />
       </main>
     </>
   );

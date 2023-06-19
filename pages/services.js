@@ -1,4 +1,5 @@
 import Card from "@/components/Card/Card";
+import Companies from "@/components/Companies/Companies";
 import Decoration from "@/components/Decoration/Decoration";
 import Navigation from "@/components/Navigation/Navigation";
 import Pricing from "@/components/Pricing/Pricing";
@@ -80,6 +81,7 @@ const services = () => {
           />
         ))}
         <Socials />
+        <Companies />
       </main>
     </>
   );

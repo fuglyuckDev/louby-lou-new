@@ -7,6 +7,7 @@ import React from "react";
 import pricingJSON from "./api/json/packages.json";
 import PricingContainer from "@/components/PricingContainer/PricingContainer";
 import About from "@/components/About/About";
+import Companies from "@/components/Companies/Companies";
 
 export async function getStaticProps() {
   const pricingData = await pricingJSON;
@@ -41,6 +42,7 @@ const pricing = ({ pricingData }) => {
           text={["It's really a great way to break up the page!"]}
         />
         <Socials />
+        <Companies />
       </main>
     </>
   );
