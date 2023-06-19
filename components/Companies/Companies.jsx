@@ -38,6 +38,12 @@ const Companies = () => {
           src={"/images/companies/RMCH_logo.png"}
           className={styles.companies__Image}
         />
+        <Image
+          width={250}
+          height={250}
+          src={"/images/companies/david_lloyd_logo.png"}
+          className={styles.companies__Image}
+        />
       </div>
     </div>
   );
