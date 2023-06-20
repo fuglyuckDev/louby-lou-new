@@ -142,7 +142,7 @@ const Pricing = ({ data }) => {
               </label>
               <input
                 required
-                type="mobile"
+                type="tel"
                 id="mobile"
                 name="user_mobile"
                 placeholder="Mobile"
