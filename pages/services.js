@@ -68,6 +68,7 @@ const services = () => {
         <DividerTitle
           title={"What can Louby Lou do for you?"}
           text={["There's always a little something for everyone!"]}
+          spacing={"large"}
         />
         <Decoration position={"right"} />
         {array.map((item, idx) => (

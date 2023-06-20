@@ -5,7 +5,7 @@ import styles from "./Contact.module.scss";
 const Contact = () => {
   const [zoom, setZoom] = useState(false);
 
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     let dateInput = document.getElementById("date");
     dateInput.min = new Date().toISOString().split("T")[0];
 
@@ -16,7 +16,7 @@ const Contact = () => {
         setZoom(false);
       }
     });
-  }
+  }, []);
 
   return (
     <div className={styles.container}>
