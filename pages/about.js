@@ -30,7 +30,7 @@ const about = () => {
             "I knew from the first party I went to with him, this was my calling and what I wanted to do! It wasn't long before the bug turned into a job, and I was accompanying my dad to his parties as Louby Lou and so started my clowning journey. ",
           ]}
           pos={"right"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
+          img={"/images/pictures/louby_lou_father.jpg"}
         />
         <Card
           title={""}
@@ -39,7 +39,7 @@ const about = () => {
             "However, I've always stayed grounded and love parties of any size, as it doesn't matter to me how big the crowd is, as long as their is magic and laughter.",
           ]}
           pos={"left"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
+          img={"/images/pictures/louby_lou_young.jpg"}
         />
         <Card
           title={""}
@@ -48,7 +48,7 @@ const about = () => {
             "From the birth of Louby Lou to now, I have always put the joy of the audience first, building on my skills, adding new elements to my shows and taking advice, guidance and feedback to continually put on the best entertainment for my audience. ",
           ]}
           pos={"right"}
-          img={"/images/pictures/lucy_about_me.jpeg"}
+          img={"/images/pictures/louby_lou_family.jpg"}
         />
 
         <About

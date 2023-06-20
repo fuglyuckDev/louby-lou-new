@@ -12,7 +12,7 @@
       "title": "Looking for giggles?",
       "button": true,
       "video": {
-        "url": "/videos/louby_lou_promo.mp4"
+        "url": "/videos/louby_lou_showreel.mp4"
       }
     },
     "about": {
@@ -46,7 +46,7 @@
           "There are Louby Lou events across the North West weekly! I perform at some amazing family friendly venues across the region, so why not see if there is one near you and come along and say hi!"
         ],
         "position": "left",
-        "image": "/images/pictures/lucy_about_me.jpeg",
+        "image": "/images/pictures/louby_lou_events.jpg",
         "buttonAction": "events"
       },
       {
@@ -56,7 +56,7 @@
           "You can book Louby Lou for a range of events, such as birthday parties, school events, christenings, weddings, corporate events and much more!"
         ],
         "position": "right",
-        "image": "/images/pictures/lucy_about_me.jpeg",
+        "image": "/images/pictures/louby_lou_party.jpg",
         "buttonAction": "services"
       }
     ]
