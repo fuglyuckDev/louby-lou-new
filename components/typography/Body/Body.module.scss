@@ -11,7 +11,8 @@
   @media only screen and (min-width: $tablet) {
     font-size: $body-mobile;
   }
-  @media only screen and (min-width: $laptop) {
-    font-size: $body;
+
+  @media only screen and (min-width: $laptopL) {
+    font-size: 18px;
   }
 }

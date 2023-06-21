@@ -9,11 +9,12 @@
 }
 
 .dialog {
+  top: 160px;
   transition: 0.5s;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 5px solid rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .dialog::backdrop {
@@ -21,7 +22,7 @@
 }
 
 .links__Container {
-  margin-top: 80px;
+  margin-top: -20px;
   text-decoration: none;
 }
 
@@ -31,7 +32,7 @@
 
 .links {
   font-family: $body-font;
-  font-size: $title-small-mobile;
+  font-size: 35px;
   font-weight: 700;
   text-decoration: none;
   color: $accent-dark;
@@ -43,6 +44,10 @@
   border: none;
   font-family: $body-font;
   color: $accent-dark;
-  font-size: $title-small-mobile;
+  font-size: 35px;
   font-weight: 700;
+  padding: 0px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

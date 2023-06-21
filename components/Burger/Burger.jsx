@@ -34,6 +34,14 @@ const Burger = () => {
       </button>
       <dialog id="d" className={styles.dialog}>
         <div className={styles.links__Container}>
+          <button
+            onClick={() => {
+              d.close();
+            }}
+            className={styles.button__Close}
+          >
+            X
+          </button>
           <ul style={{ paddingLeft: 0 }}>
             {links.map((item, idx) => (
               <li className={styles.links__Item} key={idx}>
@@ -44,14 +52,6 @@ const Burger = () => {
             ))}
           </ul>
         </div>
-        <button
-          onClick={() => {
-            d.close();
-          }}
-          className={styles.button__Close}
-        >
-          X
-        </button>
       </dialog>
     </div>
   );

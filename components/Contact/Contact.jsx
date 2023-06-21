@@ -65,7 +65,7 @@ const Contact = () => {
             <label>Query:</label>
             <textarea></textarea>
           </div>
-          <button>Send Email</button>
+          <button>Send Enquiry</button>
         </form>
       </div>
     </div>

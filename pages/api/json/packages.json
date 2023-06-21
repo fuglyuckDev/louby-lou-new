@@ -3,7 +3,7 @@
     "name": "Silly Silver",
     "basePrice": "£350",
     "priceRaw": 350,
-    "maxKids": 10,
+    "maxKids": 20,
     "added": 10,
     "options": [
       "Option",

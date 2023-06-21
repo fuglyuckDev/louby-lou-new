@@ -65,6 +65,9 @@
   margin: 0px 0px 0px 0px;
   width: 90%;
   @media only screen and (min-width: $tablet) {
+    width: 80%;
+  }
+  @media only screen and (min-width: $laptopL) {
     width: 70%;
   }
 }

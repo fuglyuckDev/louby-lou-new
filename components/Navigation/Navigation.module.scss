@@ -13,7 +13,7 @@
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 
   @media only screen and (min-width: $tablet) {
     background-color: rgba(0, 0, 0, 0.5);
@@ -39,6 +39,11 @@
   display: none;
 
   @media only screen and (min-width: $tablet) {
+    width: 60%;
+    display: flex;
+  }
+
+  @media only screen and (min-width: $laptopL) {
     width: 50%;
     display: flex;
   }
@@ -68,7 +73,7 @@
 .button {
   height: 100%;
   width: 100%;
-  background-color: $accent-dark;
+  background-color: $accent-light;
   color: $background-dark;
   font-size: $button-mobile;
   border: none;

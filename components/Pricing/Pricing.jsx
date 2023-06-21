@@ -75,6 +75,7 @@ const Pricing = ({ data }) => {
         </div>
         <div className={styles.form__Container}>
           <form ref={form} id="pricingForm" onSubmit={sendEmail}>
+            <p>* Total price can change depending on your location.</p>
             <div id="counterContainer" className={styles.counter__Container}>
               <label htmlFor={"party-size"}>
                 <p>Party size:</p>
@@ -111,7 +112,8 @@ const Pricing = ({ data }) => {
                 </button>
               </div>
             </div>
-            <div className={styles.input__Container}>
+
+            {/* <div className={styles.input__Container}>
               <label htmlFor="name">
                 <p>Name:</p>
               </label>
@@ -228,7 +230,7 @@ const Pricing = ({ data }) => {
                 style={{ display: "none" }}
                 readOnly
               ></input>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

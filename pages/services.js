@@ -2,7 +2,6 @@ import Card from "@/components/Card/Card";
 import Companies from "@/components/Companies/Companies";
 import Decoration from "@/components/Decoration/Decoration";
 import Navigation from "@/components/Navigation/Navigation";
-import Pricing from "@/components/Pricing/Pricing";
 import Socials from "@/components/Socials/Socials";
 import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
 import Head from "next/head";
@@ -37,10 +36,10 @@ const services = () => {
       desc: [
         "For a little one, keeping entertained can be a difficult task, especially at large family events! Louby Lou makes that uphill challenge a waterslide of fun and excitement, alleviating the pressure of parenting for the big day!",
       ],
-      image: "/images/pictures/services_wedding_christening.jpg",
+      image: "/images/pictures/services_wedding_christening2.jpg",
     },
     {
-      name: "Hospitals & Special Needs",
+      name: "Hospitals & Additional Needs",
       desc: [
         "Qualifying as a 'Clown Doctor' in 1999, Louby Lou has extensive knowledge and expertise in dealing with those who require a gentler touch! Working with charities such as 'Medequip4kids' and 'Royal Manchester Children's Hospital'.",
       ],
@@ -84,7 +83,7 @@ const services = () => {
             pos={isInt(idx / 2)}
             img={item.image}
             button
-            buttonType={"pricing"}
+            buttonType={"enquire"}
             key={idx}
           />
         ))}

@@ -9,6 +9,7 @@ import Socials from "@/components/Socials/Socials";
 import homeData from "./api/json/home.json";
 import Companies from "@/components/Companies/Companies";
 import Contact from "@/components/Contact/Contact";
+import Book from "@/components/Book/Book";
 
 export async function getServerSideProps() {
   const pageData = await homeData;
@@ -60,7 +61,6 @@ export default function Home({ pageData }) {
           text={content.dividerTitle.bottom.text}
           spacing={"large"}
         />
-        <Contact />
         <Socials />
         <Companies />
       </main>

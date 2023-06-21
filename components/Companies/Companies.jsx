@@ -11,6 +11,24 @@ const Companies = () => {
         <Image
           width={250}
           height={250}
+          src={"/images/companies/BBC_mid_colour.png"}
+          className={styles.companies__Image}
+        />
+        <Image
+          width={250}
+          height={250}
+          src={"/images/companies/wigan_council_logo.png"}
+          className={styles.companies__Image}
+        />
+        <Image
+          width={250}
+          height={250}
+          src={"/images/companies/burnley_FC_logo.png"}
+          className={styles.companies__Image}
+        />
+        <Image
+          width={250}
+          height={250}
           src={"/images/companies/reubens_retreat_clear.png"}
           className={styles.companies__Image}
         />
