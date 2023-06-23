@@ -20,7 +20,7 @@
     "name": "Golden Giggles",
     "basePrice": "£380",
     "priceRaw": 380,
-    "maxKids": 20,
+    "maxKids": 25,
     "added": 10,
     "options": [
       "1.5 Hour(s)",
@@ -63,7 +63,7 @@
     "name": "Crazy Custom",
     "basePrice": "£450+",
     "priceRaw": 450,
-    "maxKids": 30,
+    "maxKids": 40,
     "added": 10,
     "options": [
       "Max 3 Hours",
