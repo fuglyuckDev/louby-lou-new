@@ -45,7 +45,9 @@ const Pricing = ({ data }) => {
         <div className={styles.pricing__Title__Container}>
           <h1 style={{ color: `${data.color}` }}>{data.name}</h1>
           <div className={styles.pricing__Base__Price__Container}>
-            <h2>{data.basePrice}</h2>
+            <h2>
+              {`£${data.priceRaw + (partyCount - data.maxKids) * data.added}`}
+            </h2>
             <p>Base Price</p>
           </div>
         </div>
