@@ -1,35 +1,39 @@
 [
   {
     "name": "Silly Silver",
-    "basePrice": "£350",
-    "priceRaw": 350,
+    "basePrice": "£330",
+    "priceRaw": 330,
     "maxKids": 20,
     "added": 10,
     "options": [
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option"
+      "1 Hour",
+      "LBL Dance",
+      "LBL Interview",
+      "Roger The Rabbit",
+      "Magic",
+      "Games",
+      "Dancing"
     ],
     "color": "#BDBDBD"
   },
   {
     "name": "Golden Giggles",
-    "basePrice": "£400",
-    "priceRaw": 400,
+    "basePrice": "£380",
+    "priceRaw": 380,
     "maxKids": 20,
     "added": 10,
     "options": [
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option"
+      "1.5 Hour(s)",
+      "LBL Dance",
+      "LBL Interview",
+      "Roger The Rabbit",
+      "Magic",
+      "Games",
+      "Dancing",
+      "IBIZA",
+      "Snow Machine",
+      "Saxophone",
+      "Treats"
     ],
     "color": "#EFB94F"
   },
@@ -40,13 +44,18 @@
     "maxKids": 30,
     "added": 10,
     "options": [
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option"
+      "2 Hour(s)",
+      "LBL Dance",
+      "LBL Interview",
+      "Roger The Rabbit",
+      "Magic",
+      "Games",
+      "Dancing",
+      "IBIZA",
+      "Snow Machine",
+      "Saxophone",
+      "Treats",
+      "Glowsticks"
     ],
     "color": "#4690FF"
   },
@@ -57,13 +66,19 @@
     "maxKids": 30,
     "added": 10,
     "options": [
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option",
-      "Option"
+      "Max 3 Hours",
+      "LBL Dance",
+      "LBL Interview",
+      "Roger The Rabbit",
+      "Magic",
+      "Games",
+      "Dancing",
+      "IBIZA",
+      "Snow Machine",
+      "Saxophone",
+      "Treats",
+      "Glowsticks",
+      "+MORE"
     ],
     "color": "#CF21EC"
   }
