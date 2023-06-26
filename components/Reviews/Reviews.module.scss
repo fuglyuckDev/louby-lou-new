@@ -36,6 +36,10 @@
   cursor: grab;
 }
 
+.slide:active {
+  cursor: grabbing;
+}
+
 .slide h3 {
   font-size: 26px;
   @media only screen and (min-width: $tablet) {
