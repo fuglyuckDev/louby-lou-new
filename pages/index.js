@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import Hero from "@/components/Hero/Hero";
 import Navigation from "@/components/Navigation/Navigation";
 import About from "@/components/About/About";
@@ -8,8 +9,6 @@ import Card from "@/components/Card/Card";
 import Socials from "@/components/Socials/Socials";
 import homeData from "./api/json/home.json";
 import Companies from "@/components/Companies/Companies";
-import Contact from "@/components/Contact/Contact";
-import Book from "@/components/Book/Book";
 import Reviews from "@/components/Reviews/Reviews";
 
 export async function getServerSideProps() {

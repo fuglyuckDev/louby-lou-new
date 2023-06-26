@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const Reviews = ({ data }) => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-  const array = [2, 3, 4, 5, 6];
   return (
     <div className={styles.container}>
       <DividerTitle
@@ -18,12 +17,13 @@ const Reviews = ({ data }) => {
       <div className={styles.container__Slider__Parent} ref={emblaRef}>
         <div className={styles.slider__Container}>
           {data.map((item, idx) => (
-            <div className={styles.slide}>
+            <div key={idx} className={styles.slide}>
               <h3>{item.name}</h3>
               <p>{item.review}</p>
               <div>
                 {Array.from(Array(item.stars).keys()).map((item, idx) => (
                   <svg
+                    key={idx}
                     xmlns="http://www.w3.org/2000/svg"
                     width="38"
                     height="38"
