@@ -1,16 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Title from "../typography/Title/Title";
 import styles from "./Contact.module.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [zoom, setZoom] = useState(false);
+  const [formStatus, setFormStatus] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm("query_email", "test_email", form.current, "rPVlmRtn45wWuAQVP")
+      .then(
+        (result) => {
+          setFormStatus("Message sent successfully!");
+          let form = document.getElementById("contactForm");
+          form.reset();
+        },
+        (error) => {
+          setFormStatus(`Message not sent, error:${error}`);
+        }
+      );
+  };
 
   useEffect(() => {
     let dateInput = document.getElementById("date");
     dateInput.min = new Date().toISOString().split("T")[0];
 
-    document.getElementById("contactMethod").addEventListener("change", () => {
-      if (document.getElementById("contactMethod").value === "Zoom") {
+    document.getElementById("method").addEventListener("change", () => {
+      if (document.getElementById("method").value === "Zoom") {
         setZoom(true);
       } else {
         setZoom(false);
@@ -24,27 +44,75 @@ const Contact = () => {
         <Title text={"NEED A CHAT?"} />
       </div>
       <div className={styles.form__Container}>
-        <form>
+        <form id="contactForm" ref={form} onSubmit={sendEmail}>
           <div className={styles.input__Container}>
-            <label>Name:</label>
-            <input required type="text"></input>
+            <label htmlFor="name">Name:</label>
+            <input
+              autoComplete="given-name"
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Name"
+              required
+            ></input>
           </div>
           <div className={styles.input__Container}>
-            <label>Email:</label>
-            <input required type="email"></input>
+            <label htmlFor="email">Email:</label>
+            <input
+              autoComplete="off"
+              type="email"
+              id="email"
+              name="user_email"
+              placeholder="Email"
+              required
+            ></input>
           </div>
           <div className={styles.input__Container}>
-            <label>Mobile:</label>
-            <input required type="tel"></input>
+            <label htmlFor="mobile">Mobile:</label>
+            <input
+              autoComplete="off"
+              required
+              type="tel"
+              id="mobile"
+              name="user_mobile"
+              placeholder="Mobile"
+            ></input>
           </div>
           <div className={styles.input__Container}>
-            <label>Preferred contact method:</label>
-            <select id="contactMethod">
+            <label htmlFor="method">Preferred contact method:</label>
+            <select
+              defaultValue={"Mobile"}
+              type="contact-method"
+              id="method"
+              name="user_contact-method"
+            >
               <option value="Zoom">Zoom</option>
-              <option selected value="Mobile">
-                Mobile
-              </option>
+              <option value="Mobile">Mobile</option>
               <option value="Email">Email</option>
+            </select>
+          </div>
+          <div className={styles.input__Container}>
+            <label htmlFor="event">Party Type:</label>
+            <select type="event-type" id="event" name="user_event-type">
+              <option value="Nothing">None</option>
+              <option value="a Party">Parties</option>
+              <option value="a Corporate event">Corporate</option>
+              <option value="a Wedding">Wedding</option>
+              <option value="a Christening">Christening</option>
+              <option value="Giggles on Wheels">Giggles on Wheels</option>
+              <option value="Hospitals or Special Needs">
+                Hospital / Special Needs
+              </option>
+            </select>
+          </div>
+          <div className={styles.input__Container}>
+            <label htmlFor="package">Package:</label>
+            <select type="package" id="package" name="package">
+              <option value="Not Sure">Not Sure</option>
+              <option value="Silly Silver"> Mobile </option>
+              <option value="Golden Giggles">Golden Giggles</option>
+              <option value="Playful Platinum">Playful Platinum</option>
+              <option value="Crazy Custom">Crazy Custom</option>
             </select>
           </div>
           <div
@@ -53,19 +121,30 @@ const Contact = () => {
             }
           >
             <div className={styles.input__Container}>
-              <label>Select date:</label>
-              <input id="date" type="date"></input>
+              <label htmlFor="date">Select date:</label>
+              <input name="date" id="date" type="date"></input>
             </div>
             <div className={styles.input__Container}>
-              <label>Select time:</label>
-              <input id="time" type="time"></input>
+              <label htmlFor="time">Select time:</label>
+              <input name="time" id="time" type="time"></input>
             </div>
           </div>
           <div className={styles.input__Container}>
-            <label>Query:</label>
-            <textarea></textarea>
+            <label htmlFor="query">Query:</label>
+            <textarea name="message" id="query" required></textarea>
           </div>
-          <button>Send Enquiry</button>
+          <div
+            className={
+              formStatus === ""
+                ? styles.noDisplay
+                : formStatus === "Message sent successfully!"
+                ? styles.form__Success
+                : styles.form__Failure
+            }
+          >
+            <p id="message">* Message sent successfully!</p>
+          </div>
+          <button type="submit">Send Enquiry</button>
         </form>
       </div>
     </div>

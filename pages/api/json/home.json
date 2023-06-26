@@ -33,10 +33,6 @@
       "top": {
         "title": "25 Years of Louby Lou Giggles, Fun & Magic",
         "text": ["Fun for all, magic for many and parties to remember!"]
-      },
-      "bottom": {
-        "title": "WHAT MY CLIENTS SAY",
-        "text": [""]
       }
     },
     "cards": [
@@ -58,6 +54,28 @@
         "position": "right",
         "image": "/images/pictures/louby_lou_party.jpg",
         "buttonAction": "services"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Nicola Fisher",
+        "review": "Louby Lou is absolutely amazing!!! All our guest adults and children of all ages enjoyed her down to earth, fun packed, funny!! and personable show!!",
+        "stars": 5
+      },
+      {
+        "name": "Emmy Demko",
+        "review": "Louby Lou is amazing! She came down to our football funday and bought such joy to all the children. Couldn’t recommend enough! And the Sax playing also brings the adults in! Close my eyes and we’re in Ibiza! Thank you so much!",
+        "stars": 5
+      },
+      {
+        "name": "Kay Warhurst",
+        "review": "Been to lots of Louby Lou events recently with our little girl! Absolutely amazing every time! Our near 3 year old loves to party with Louby Lou! Hey Yeah, Hey Yeah! 🎉💞",
+        "stars": 5
+      },
+      {
+        "name": "Helena",
+        "review": "Where to start! We celebrated our little girls 2nd birthday in the best possible way with Louby Lou. We can’t thank you enough Lucy, with memories that will last a lifetime. I wouldn’t hesitate to book for a celebration of any kind. From start to finish the kids and adults were entertained and had an amazing time, lots of singing, dancing, prizes and fun for everyone. Thank you again for the most wonderful day xxx",
+        "stars": 5
       }
     ]
   }

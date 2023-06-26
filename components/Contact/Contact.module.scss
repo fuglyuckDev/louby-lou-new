@@ -98,6 +98,25 @@
   outline-color: $accent-dark;
 }
 
+.form__Success {
+  color: green;
+  animation: alert 0.5s ease forwards;
+}
+
+.form__Failure {
+  color: red;
+  animation: alert 0.5s ease forwards;
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .container button {
   color: $background-dark;
   width: 50%;

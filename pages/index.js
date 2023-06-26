@@ -10,6 +10,7 @@ import homeData from "./api/json/home.json";
 import Companies from "@/components/Companies/Companies";
 import Contact from "@/components/Contact/Contact";
 import Book from "@/components/Book/Book";
+import Reviews from "@/components/Reviews/Reviews";
 
 export async function getServerSideProps() {
   const pageData = await homeData;
@@ -56,11 +57,7 @@ export default function Home({ pageData }) {
 
         <Decoration position={content.decoration.bottom.position} />
 
-        <DividerTitle
-          title={content.dividerTitle.bottom.title}
-          text={content.dividerTitle.bottom.text}
-          spacing={"large"}
-        />
+        <Reviews data={content.reviews} />
         <Socials />
         <Companies />
       </main>
