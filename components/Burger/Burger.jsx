@@ -10,6 +10,7 @@ const Burger = () => {
     { name: "SERVICES", target: "/services" },
     { name: "PRICING", target: "/pricing" },
     { name: "SHOP", target: "/shop" },
+    { name: "GALLERY", target: "/gallery" },
   ];
 
   return (

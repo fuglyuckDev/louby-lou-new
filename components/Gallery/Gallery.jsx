@@ -5,6 +5,7 @@ const Gallery = () => {
   return (
     <div className={styles.container}>
       <iframe
+        scrolling="no"
         src="https://www.juicer.io/api/feeds/loubylouclown/iframe"
         frameborder="0"
         className={styles.gallery}
