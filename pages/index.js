@@ -64,6 +64,10 @@ export default function Home({ pageData }) {
             name: "business:contact_data",
             content: JSON.stringify(businessAddress),
           },
+          {
+            name: "google-site-verification",
+            content: "rUu4vHUuVlrNlBduIw0hsXgIgOcqkLdGcBlTs-ZabjI",
+          },
         ]}
         favicon={head.favicon}
       />
