@@ -5,7 +5,7 @@ import Body from "../typography/Body/Body";
 import Image from "next/image";
 import Book from "../Book/Book";
 
-const Card = ({ title, desc, img, pos, button, buttonType }) => {
+const Card = ({ title, desc, img, pos, button, buttonType, imageAlt }) => {
   return (
     <div
       className={
@@ -27,6 +27,7 @@ const Card = ({ title, desc, img, pos, button, buttonType }) => {
           height={480}
           src={img}
           className={styles.card__Image}
+          alt={imageAlt}
         />
       </div>
     </div>

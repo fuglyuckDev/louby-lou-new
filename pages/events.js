@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Navigation from "@/components/Navigation/Navigation";
-import Decoration from "@/components/Decoration/Decoration";
 import Socials from "@/components/Socials/Socials";
 import About from "@/components/About/About";
 import Events from "@/components/Events/Events";

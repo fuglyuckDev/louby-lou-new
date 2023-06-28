@@ -23,7 +23,7 @@ export async function getServerSideProps() {
 export default function Home({ pageData }) {
   let content = pageData.main;
   let head = pageData.head;
-  let locationIndex = 0;
+  let locationIndex = 2;
 
   const areaServed = [
     {

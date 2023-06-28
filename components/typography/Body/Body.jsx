@@ -5,7 +5,7 @@ const Body = ({ text }) => {
   return (
     <>
       {text.map((item, idx) => (
-        <p className={styles.body} key={idx}>
+        <p lang="en" className={styles.body} key={idx}>
           {item}
         </p>
       ))}

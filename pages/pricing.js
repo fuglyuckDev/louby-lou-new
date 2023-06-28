@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation/Navigation";
-import Pricing from "@/components/Pricing/Pricing";
 import Socials from "@/components/Socials/Socials";
 import DividerTitle from "@/components/typography/DividerTitle/DividerTitle";
 import Head from "next/head";
@@ -38,9 +37,13 @@ const pricing = ({ pricingData }) => {
         />
         <PricingContainer data={pricingData} />
         <DividerTitle
-          title={"Use this as a divider"}
-          text={["It's really a great way to break up the page!"]}
+          title={"ready for giggles? enquire now!"}
+          text={[""]}
+          button={true}
+          buttonType={"enquire"}
+          spacing={"large"}
         />
+
         <Socials />
         <Companies />
       </main>

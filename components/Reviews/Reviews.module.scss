@@ -10,15 +10,16 @@
 }
 
 .container__Slider__Parent {
-  overflow: hidden;
+  overflow: visible;
   width: 90%;
   margin: auto;
 
   @media only screen and (min-width: $tablet) {
-    width: 50%;
+    width: 80%;
   }
 }
 .slider__Container {
+  width: 100%;
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;

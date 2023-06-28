@@ -2,8 +2,9 @@ import React from "react";
 import Title from "../Title/Title";
 import Body from "../Body/Body";
 import styles from "./DividerTitle.module.scss";
+import Book from "@/components/Book/Book";
 
-const DividerTitle = ({ title, text, spacing }) => {
+const DividerTitle = ({ title, text, spacing, button, buttonType }) => {
   switch (spacing) {
     case "none":
       return (
@@ -14,6 +15,7 @@ const DividerTitle = ({ title, text, spacing }) => {
 
           <div className={styles.body__Container}>
             <Body text={text} />
+            <Book type={buttonType} button={button} />
           </div>
         </div>
       );
@@ -27,6 +29,7 @@ const DividerTitle = ({ title, text, spacing }) => {
 
           <div className={styles.body__Container}>
             <Body text={text} />
+            <Book type={buttonType} button={button} />
           </div>
         </div>
       );
@@ -40,6 +43,7 @@ const DividerTitle = ({ title, text, spacing }) => {
 
           <div className={styles.body__Container}>
             <Body text={text} />
+            <Book type={buttonType} button={button} />
           </div>
         </div>
       );
@@ -53,6 +57,7 @@ const DividerTitle = ({ title, text, spacing }) => {
 
           <div className={styles.body__Container}>
             <Body text={text} />
+            <Book type={buttonType} button={button} />
           </div>
         </div>
       );
@@ -66,6 +71,7 @@ const DividerTitle = ({ title, text, spacing }) => {
 
           <div className={styles.body__Container}>
             <Body text={text} />
+            <Book type={buttonType} button={button} />
           </div>
         </div>
       );

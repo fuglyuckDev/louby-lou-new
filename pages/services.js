@@ -21,7 +21,7 @@ const services = () => {
       desc: [
         "Let's make the birthday child's special day one to remember! Louby Lou's mission is to make the birthday child the star of the show, helping Louby Lou throughout the performance, whether it's magic, singing or games! With a choice of a 1 hour show or a 2 hour show, a gift is guaranteed!",
       ],
-      image: "/images/pictures/services_parties.jpg",
+      image: "/images/pictures/services_parties_2.jpg",
     },
     {
       name: "Giggles on Wheels",

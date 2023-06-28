@@ -48,7 +48,7 @@ const about = () => {
             "From the birth of Louby Lou to now, I have always put the joy of the audience first, building on my skills, adding new elements to my shows and taking advice, guidance and feedback to continually put on the best entertainment for my audience. ",
           ]}
           pos={"right"}
-          img={"/images/pictures/louby_lou_family.jpg"}
+          img={"/images/pictures/louby_lou_family_2.jpg"}
         />
 
         <About

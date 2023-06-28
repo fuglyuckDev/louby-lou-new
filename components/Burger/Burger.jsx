@@ -16,6 +16,7 @@ const Burger = () => {
   return (
     <div className={styles.container}>
       <button
+        aria-label="Burger Menu"
         onClick={() => {
           d.showModal();
         }}

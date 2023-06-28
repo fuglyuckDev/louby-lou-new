@@ -10,8 +10,10 @@ const Socials = () => {
         <Title text={"Follow Louby Lou"} />
       </div>
       <div className={styles.socials__Container}>
-        <Link href={"https://www.facebook.com/loubylouclown/?locale=en_GB"}>
-          {" "}
+        <Link
+          aria-label="Facebook"
+          href={"https://www.facebook.com/loubylouclown/?locale=en_GB"}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -25,7 +27,10 @@ const Socials = () => {
           </svg>
         </Link>
 
-        <Link href={"https://twitter.com/loubylouclown?lang=en"}>
+        <Link
+          aria-label="Twitter"
+          href={"https://twitter.com/loubylouclown?lang=en"}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -39,7 +44,10 @@ const Socials = () => {
           </svg>
         </Link>
 
-        <Link href={"https://www.instagram.com/loubylouclown/?hl=en"}>
+        <Link
+          aria-label="Instagram"
+          href={"https://www.instagram.com/loubylouclown/?hl=en"}
+        >
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +62,10 @@ const Socials = () => {
           </svg>
         </Link>
 
-        <Link href={"https://www.linkedin.com/in/lucy-wilkinson-clown/"}>
+        <Link
+          aria-label="Linkedin"
+          href={"https://www.linkedin.com/in/lucy-wilkinson-clown/"}
+        >
           <svg
             fill="#ffffff"
             height="25.05px"
@@ -91,7 +102,10 @@ const Socials = () => {
           </svg>
         </Link>
 
-        <Link href={"https://www.youtube.com/channel/UC_vpXmFBDFH2t7OONKzcwKA"}>
+        <Link
+          aria-label="Youtube"
+          href={"https://www.youtube.com/channel/UC_vpXmFBDFH2t7OONKzcwKA"}
+        >
           <svg
             height="30px"
             width="30px"
