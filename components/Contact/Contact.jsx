@@ -53,6 +53,7 @@ const Contact = () => {
               id="name"
               name="user_name"
               placeholder="Name"
+              aria-label="name"
               required
             ></input>
           </div>
@@ -65,6 +66,7 @@ const Contact = () => {
               name="user_email"
               placeholder="Email"
               required
+              aria-label="email"
             ></input>
           </div>
           <div className={styles.input__Container}>
@@ -76,6 +78,7 @@ const Contact = () => {
               id="mobile"
               name="user_mobile"
               placeholder="Mobile"
+              aria-label="mobile"
             ></input>
           </div>
           <div className={styles.input__Container}>
@@ -85,6 +88,7 @@ const Contact = () => {
               type="contact-method"
               id="method"
               name="user_contact-method"
+              aria-label="contact method drop down"
             >
               <option value="Zoom">Zoom</option>
               <option value="Mobile">Mobile</option>
@@ -93,7 +97,12 @@ const Contact = () => {
           </div>
           <div className={styles.input__Container}>
             <label htmlFor="event">Party Type:</label>
-            <select type="event-type" id="event" name="user_event-type">
+            <select
+              aria-label="event type drop down"
+              type="event-type"
+              id="event"
+              name="user_event-type"
+            >
               <option value="Nothing">None</option>
               <option value="a Party">Parties</option>
               <option value="a Corporate event">Corporate</option>
@@ -107,7 +116,12 @@ const Contact = () => {
           </div>
           <div className={styles.input__Container}>
             <label htmlFor="package">Package:</label>
-            <select type="package" id="package" name="package">
+            <select
+              aria-label="package drop down"
+              type="package"
+              id="package"
+              name="package"
+            >
               <option value="Not Sure">Not Sure</option>
               <option value="Silly Silver"> Mobile </option>
               <option value="Golden Giggles">Golden Giggles</option>
@@ -122,16 +136,31 @@ const Contact = () => {
           >
             <div className={styles.input__Container}>
               <label htmlFor="date">Select date:</label>
-              <input name="date" id="date" type="date"></input>
+              <input
+                aria-label="date"
+                name="date"
+                id="date"
+                type="date"
+              ></input>
             </div>
             <div className={styles.input__Container}>
               <label htmlFor="time">Select time:</label>
-              <input name="time" id="time" type="time"></input>
+              <input
+                aria-label="time"
+                name="time"
+                id="time"
+                type="time"
+              ></input>
             </div>
           </div>
           <div className={styles.input__Container}>
             <label htmlFor="query">Query:</label>
-            <textarea name="message" id="query" required></textarea>
+            <textarea
+              aria-label="query"
+              name="message"
+              id="query"
+              required
+            ></textarea>
           </div>
           <div
             className={
@@ -144,7 +173,9 @@ const Contact = () => {
           >
             <p id="message">* Message sent successfully!</p>
           </div>
-          <button type="submit">Send Enquiry</button>
+          <button aria-label="send enquiry" type="submit">
+            Send Enquiry
+          </button>
         </form>
       </div>
     </div>

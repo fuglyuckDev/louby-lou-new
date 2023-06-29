@@ -23,11 +23,12 @@ const Card = ({ title, desc, img, pos, button, buttonType, imageAlt }) => {
       </div>
       <div className={styles.image__Container}>
         <Image
-          width={600}
-          height={480}
+          width={400}
+          height={400}
           src={img}
           className={styles.card__Image}
           alt={imageAlt}
+          priority
         />
       </div>
     </div>

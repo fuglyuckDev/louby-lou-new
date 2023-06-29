@@ -1,6 +1,4 @@
-const stripe = require("stripe")(
-  `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`
-);
+const stripe = require("stripe")(`${process.env.REACT_APP_STRIPE_SECRET}`);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {

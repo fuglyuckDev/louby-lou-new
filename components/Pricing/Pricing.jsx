@@ -8,7 +8,6 @@ const Pricing = ({ data }) => {
 
   useEffect(() => {
     setPartyCount(data.maxKids);
-    console.log(partyCount);
   }, []);
 
   return (

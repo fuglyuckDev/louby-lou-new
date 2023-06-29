@@ -1,34 +1,24 @@
 {
   "events": [
     {
-      "id": "Ewe-21-05-23",
-      "name": "Ewe Bar",
-      "date": "28/05/23 - 17:00 PM",
+      "id": "Delph-05-07-23",
+      "name": "The Delph",
+      "date": "05/07/23 - 10:00 AM",
       "price": [{ "adult": 0 }, { "child": 8 }],
       "length": 1.5,
-      "postCode": " 370 Chorley Rd, Bolton BL5 3NB",
-      "imgURL": "/images/pictures/ewe bar.webp",
-      "description": "This is just an example description for ewe, this will have more details on it once we figure out the details section or something."
-    },
-    {
-      "id": "Delph-28-05-23",
-      "name": "The Delph",
-      "date": "28/05/23 - 17:00 PM",
-      "price": [{ "adult": 2 }, { "child": 8 }],
-      "length": 1.5,
       "postCode": "Worsley Rd, Worsley, M28 2NL",
-      "imgURL": "/images/pictures/the_delph.webp",
-      "description": "This is just an example description for the delph, this will have more details on it once we figure out the details section or something."
+      "imgURL": "/images/events/the_delph_louby_lou.webp",
+      "description": "Join us for Parents & Tots at The Delph Restaurant & Cocktail Bar! ✨   Mark your calendars for Wednesday 5th July, from 10am-11:30am. Bring your little ones for loads of giggles, magical snow, and Ibiza style saxophone tunes! 🎈🎷   Parents, get ready to have fun too!"
     },
     {
-      "id": "Point-28-05-23",
+      "id": "Point-20-07-23",
       "name": "The Point",
-      "date": "28/05/23 - 17:00 PM",
-      "price": [{ "adult": 0 }, { "child": 10 }],
+      "date": "20/07/23 - 05:00 PM",
+      "price": [{ "adult": 0 }, { "child": 8 }],
       "length": 1.5,
       "postCode": "Ann Ln, Tyldesley, Astley, M29 7SG",
-      "imgURL": "/images/pictures/astley_point.webp",
-      "description": "This is just an example description for the point, this will have more details on it once we figure out the details section or something."
+      "imgURL": "/images/events/the_point_louby_lou.webp",
+      "description": "🎉 Kids Bingo is BACK and better than ever! 🎉   Join Louby Lou at @thepointastley on Thursday 20th July, for an unforgettable disco, bingo extravaganza with crazy prizes, music, and so much more!! 🎶   Bring your family and friends along, because we're about to create memories that will last a lifetime. 🪄🪄"
     }
   ]
 }

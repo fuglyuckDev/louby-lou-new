@@ -38,9 +38,9 @@ export default function Home({ pageData }) {
 
   const businessAddress = {
     "@type": "PostalAddress",
-    streetAddress: "123 Main Street",
-    addressLocality: "Atherton",
-    postalCode: "AB12 3CD",
+    streetAddress: "19 Sandy Lane",
+    addressLocality: "Astley",
+    postalCode: "M29 7ED",
     addressCountry: "United Kingdom",
   };
 
