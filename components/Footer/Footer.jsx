@@ -11,10 +11,10 @@ const Footer = () => {
         <div className={styles.logo__Container}>
           <Image
             alt="Louby Lou Logo"
-            width={1500}
-            height={1500}
+            width={400}
+            height={400}
             className={styles.logo}
-            src={"/images/logos/louby_lou_white.png"}
+            src={"/images/logos/louby_lou_white.webp"}
           ></Image>
         </div>
 
