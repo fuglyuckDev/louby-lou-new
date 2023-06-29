@@ -27,7 +27,7 @@ const services = () => {
       name: "Giggles on Wheels",
       desc: [
         "Looking for something a little more bitesized? Do big parties not tickle your fancy? How about some Giggles on Wheels?",
-        " 20 minutes of pure fun on your doorstep! Each visit being as unique as your little one! No matter the occasion, let's have some fun!",
+        " 20 minutes of pure fun and giggles on your doorstep! Each visit being as unique as your little one! No matter the occasion, let's have some fun!",
       ],
       image: "/images/pictures/services_giggles_on_wheels.webp",
     },
