@@ -7,7 +7,7 @@ const Hero = ({ title, button, src }) => {
     <div className={styles.heroContainer}>
       <HeroTitle text={title} button={button} />
       <video autoPlay muted loop playsInline className={styles.video}>
-        <source src={src} type="video/mp4" />
+        <source src={src} type="video/webm" />
       </video>
     </div>
   );

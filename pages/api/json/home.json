@@ -89,14 +89,14 @@
       "title": "Looking for giggles?",
       "button": true,
       "video": {
-        "url": "/videos/louby_lou_showreel_opt_2.mp4"
+        "url": "/videos/louby_lou_showreel-output.webm"
       }
     },
     "about": {
       "title": "welcome everyone",
       "body": [
         "Heya! Louby Lou here, if it's laughter you're after, then you've come to the right place...",
-        "For over 25 years, I have been the performing as a clown and children's entertainer across Manchester, Lancashire, Merseyside and the rest of The North West. It's always a pleasure to see smiles and joy on the faces of the families I meet and spreading magic and joy is what life is all about.",
+        "For over 25 years, I have been the performing as a clown and children's entertainer across Manchester, Lancashire, Merseyside, Cheshire and the rest of The North West. It's always a pleasure to see smiles and joy on the faces of the families I meet and spreading magic and joy is what life is all about.",
         "For me, the best part of being a clown and performing as Louby Lou, is being able to see happy parents, giggling children and above all, sharing and creating memories that will last a lifetime! This is something I have been doing since the age of 6, developing my skills, travelling and performing in the entertainment business, following in my father's footsteps, Trumble The Clown.",
         "Every show is different, whether its a private party, birthday celebration, corporate event or festival performance, but each gig has a base of good old-fashioned, traditional clowning and childrens entertainment. Over the years my style and shows have evolved, with the inclusion of puppetry, some Ibiza dance tunes, with a dash of saxophone and of course, plenty of magic! The perfect recipe for an amazing party atmosphere!",
         "So if you'd like to hear more about me or experience some giggles for yourself, then please, get in touch, I can't wait to hear from you!"
@@ -119,7 +119,7 @@
           "There are Louby Lou events across the North West weekly! I perform at some amazing family friendly venues across the region, so why not see if there is one near you and come along and say hi!"
         ],
         "position": "left",
-        "image": "/images/pictures/louby_lou_events.jpg",
+        "image": "/images/pictures/louby_lou_events.webp",
         "buttonAction": "events",
         "imageAlt": "An image of Louby Lou, the clown, on top of a stage, performing to a large crowd of children. There's plenty of giggles on display, from both Louby Lou and the Children. This image was taken in "
       },
@@ -130,7 +130,7 @@
           "You can book Louby Lou for a range of events, such as birthday parties, school events, christenings, weddings, corporate events and much more!"
         ],
         "position": "right",
-        "image": "/images/pictures/louby_lou_party.jpg",
+        "image": "/images/pictures/louby_lou_party.webp",
         "buttonAction": "services",
         "imageAlt": "An image of Louby Lou, the clown, posing in front of a Louby Lou banner with a group of 10 children at a party. Each child is giggling and celebrating. The image really radiates excitment. This image was taken in "
       }

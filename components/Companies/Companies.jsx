@@ -11,63 +11,63 @@ const Companies = () => {
         <Image
           width={250}
           height={250}
-          src={"/images/companies/BBC_mid_colour.png"}
+          src={"/images/companies/BBC_mid_colour.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with Burnley Council"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/wigan_council_logo.png"}
+          src={"/images/companies/wigan_council_logo.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with Wigan Council"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/burnley_FC_logo.png"}
+          src={"/images/companies/burnley_FC_logo.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with Burnley Football Club"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/reubens_retreat_clear.png"}
+          src={"/images/companies/reubens_retreat_clear.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with Reubens retreat"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/BBC_Radio_Manchester_clear.png"}
+          src={"/images/companies/BBC_Radio_Manchester_clear.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with BBC Radio Manchester"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/trafford_centre_logo.png"}
+          src={"/images/companies/trafford_centre_logo.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with The Trafford Centre"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/medequip4kids_clear.png"}
+          src={"/images/companies/medequip4kids_clear.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with medequip4kids"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/RMCH_logo.png"}
+          src={"/images/companies/RMCH_logo.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with Royal Manchester Children's Hospital"
         />
         <Image
           width={250}
           height={250}
-          src={"/images/companies/david_lloyd_logo.png"}
+          src={"/images/companies/david_lloyd_logo.webp"}
           className={styles.companies__Image}
           alt="Louby Lou has partied with David Lloyds country clubs"
         />

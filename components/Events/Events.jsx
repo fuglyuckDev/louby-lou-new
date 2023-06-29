@@ -73,8 +73,8 @@ const Events = ({ position, data }) => {
         <div className={styles.image__Container}>
           <Image
             src={data.imgURL}
-            width={200}
-            height={200}
+            width={500}
+            height={500}
             className={styles.event__Image}
             alt={`Image from ${data.name} at ${data.postCode}`}
           />

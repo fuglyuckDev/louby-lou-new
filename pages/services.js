@@ -21,7 +21,7 @@ const services = () => {
       desc: [
         "Let's make the birthday child's special day one to remember! Louby Lou's mission is to make the birthday child the star of the show, helping Louby Lou throughout the performance, whether it's magic, singing or games! With a choice of a 1 hour show or a 2 hour show, a gift is guaranteed!",
       ],
-      image: "/images/pictures/services_parties_2.jpg",
+      image: "/images/pictures/services_parties_2.webp",
     },
     {
       name: "Giggles on Wheels",
@@ -29,35 +29,35 @@ const services = () => {
         "Looking for something a little more bitesized? Do big parties not tickle your fancy? How about some Giggles on Wheels?",
         " 20 minutes of pure fun on your doorstep! Each visit being as unique as your little one! No matter the occasion, let's have some fun!",
       ],
-      image: "/images/pictures/services_giggles_on_wheels.jpg",
+      image: "/images/pictures/services_giggles_on_wheels.webp",
     },
     {
       name: "Weddings & Christenings",
       desc: [
         "For a little one, keeping entertained can be a difficult task, especially at large family events! Louby Lou makes that uphill challenge a waterslide of fun and excitement, alleviating the pressure of parenting for the big day!",
       ],
-      image: "/images/pictures/services_wedding_christening2.jpg",
+      image: "/images/pictures/services_wedding_christening2.webp",
     },
     {
       name: "Hospitals & Additional Needs",
       desc: [
         "Qualifying as a 'Clown Doctor' in 1999, Louby Lou has extensive knowledge and expertise in dealing with those who require a gentler touch! Working with charities such as 'Medequip4kids' and 'Royal Manchester Children's Hospital'.",
       ],
-      image: "/images/pictures/services_special_needs.jpg",
+      image: "/images/pictures/services_special_needs.webp",
     },
     {
       name: "Schools",
       desc: [
         "School is such a big part of a little one's life, from Preschool to High school! Why not make this experience magical with Louby Lou! With age adaptable shows, the magic will always flow!",
       ],
-      image: "/images/pictures/services_schools.jpg",
+      image: "/images/pictures/services_schools.webp",
     },
     {
       name: "Corporate",
       desc: [
         "From the big stage in The Trafford Centre to the small office gatherings, Louby Lou can do it all. Working for large organisations such as McVities & Kelloggs, Louby Lou has gathered quite an impressive repertoire for any corporate occasion.",
       ],
-      image: "/images/pictures/services_corporate.jpg",
+      image: "/images/pictures/services_corporate.webp",
     },
   ];
   return (
