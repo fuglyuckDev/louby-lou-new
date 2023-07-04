@@ -1,7 +1,9 @@
-import Footer from "@/components/Footer/Footer";
-import "@/styles/globals.scss";
+import "../styles/globals.scss";
+import "../styles/app.scss";
+import Footer from "../components/Footer/Footer";
+import React from "react";
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
@@ -9,3 +11,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default MyApp;

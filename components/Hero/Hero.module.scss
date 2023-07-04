@@ -1,20 +1,25 @@
 @import "../../styles/global/variables";
+@import "../../styles/global/mixins";
 
 .heroContainer {
-  height: 100vh;
   width: 100%;
   outline: none;
-  z-index: 0;
-  display: flex;
 }
 
-.video {
-  height: 100%;
+.hero {
   width: 100%;
+  height: 100vh;
   object-fit: cover;
-  filter: brightness(70%);
+  transition: 0.5s;
+  filter: brightness(80%);
+
+  @media only screen and (min-width: $tablet) {
+    height: unset;
+    max-height: 100vh;
+    transition: 0.5s;
+  }
 }
 
-.video:focus {
+.hero:focus {
   outline: none;
 }

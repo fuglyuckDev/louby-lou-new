@@ -1,0 +1,17 @@
+[{
+    "link": "/",
+    "name": "Home"
+},{
+    "link": "/services",
+    "name": "Services"
+},{
+    "link": "/events-page",
+    "name": "Events"
+},{
+    "link": "/shop",
+    "name": "Shop"
+},
+{
+    "link": "/giggles-on-wheels-quotes",
+    "name": "Get a Quote"
+}]
